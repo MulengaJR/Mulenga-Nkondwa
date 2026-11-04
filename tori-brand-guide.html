@@ -1,0 +1,272 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Tori Stores Brand Guide</title>
+<style>
+@font-face{font-family:Montserrat;font-weight:500;src:url(assets/fonts/guide/montserrat-latin-500-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Montserrat;font-weight:700;src:url(assets/fonts/guide/montserrat-latin-700-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Montserrat;font-weight:800;src:url(assets/fonts/guide/montserrat-latin-800-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Mrs Saint Delafield';font-weight:400;src:url(assets/fonts/guide/mrs-saint-delafield-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'IBM Plex Mono';font-weight:400;src:url(assets/fonts/guide/ibm-plex-mono-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'IBM Plex Mono';font-weight:500;src:url(assets/fonts/guide/ibm-plex-mono-latin-500-normal.woff2) format('woff2');font-display:swap}
+</style>
+<style>
+/* Layout: a spec sheet. Black-and-gold masthead, then labelled sections on a quiet ground, one specimen per rule. */
+:root{
+  --ink:#0A0807; --gold:#BD870D; --gold-deep:#9E6B10; --mist:#F0F0F0; --white:#FEFEFE;
+  --bg:#FEFEFE; --fg:#14110D; --muted:#6B655C; --line:#E4E1DB; --panel:#F6F5F2; --accent:#9E6B10; --accent-ink:#FEFEFE;
+  --display:'Montserrat',system-ui,'Segoe UI',Arial,sans-serif;
+  --script:'Mrs Saint Delafield','Brush Script MT',cursive;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C0A08;--fg:#F3EFE7;--muted:#A29A8C;--line:#2A2621;--panel:#16130F;--accent:#D9A02A;--accent-ink:#0C0A08;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C0A08;--fg:#F3EFE7;--muted:#A29A8C;--line:#2A2621;--panel:#16130F;--accent:#D9A02A;--accent-ink:#0C0A08;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--display);font-weight:500;line-height:1.55;padding-inline:clamp(16px,4vw,48px);padding-block:0 64px}
+.wrap{max-width:1080px;margin-inline:auto;display:flex;flex-direction:column;gap:72px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.1}
+p{margin:0;max-width:65ch}
+.mast{background:var(--ink);color:#FEFEFE;margin-inline:calc(-1*clamp(16px,4vw,48px));padding:clamp(28px,5vw,56px) clamp(16px,4vw,48px)}
+.mast-in{max-width:1080px;margin-inline:auto;display:flex;flex-direction:column;gap:28px}
+.mast .row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.lockup{display:flex;flex-direction:column;align-items:flex-start;gap:6px;border:2px solid #FEFEFE;border-radius:999px 999px 999px 999px/60% 60% 60% 60%;padding:14px 30px 10px}
+.lockup b{font-weight:800;font-size:2.4rem;letter-spacing:.04em;line-height:1}
+.lockup span{font-size:.62rem;letter-spacing:.7em;align-self:center;margin-left:.7em}
+.mast h1{font-size:clamp(2.2rem,6vw,4.4rem);font-weight:800;letter-spacing:-.01em;background:linear-gradient(90deg,#fefefe 0%,#BD870D 100%);-webkit-background-clip:text;background-clip:text;color:transparent;width:fit-content;max-width:100%}
+.mast .sub{color:#CFC8BA;max-width:60ch}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mast .tag{color:#9C9486}
+.sec{display:flex;flex-direction:column;gap:24px}
+.sec>header{display:flex;flex-direction:column;gap:8px;border-top:2px solid var(--fg);padding-top:14px}
+.sec h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800}
+.lede{color:var(--muted)}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr))}
+.sw{display:flex;flex-direction:column;border:1px solid var(--line);min-width:0}
+.sw .chip{height:120px;display:flex;align-items:flex-end;padding:10px 12px;font-family:var(--mono);font-size:.72rem}
+.sw .meta{padding:12px;display:flex;flex-direction:column;gap:4px;background:var(--panel);flex:1}
+.sw .name{font-weight:700}
+.sw .role{font-size:.82rem;color:var(--muted)}
+.hexrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+button.copy{font:inherit;font-family:var(--mono);font-size:.72rem;background:transparent;color:var(--fg);border:1px solid var(--line);padding:2px 8px;cursor:pointer;border-radius:3px}
+button.copy:hover{border-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.grad{height:88px;background:linear-gradient(90deg,#010000 0%,#BD870D 100%);display:flex;align-items:center;justify-content:space-between;padding:0 16px;color:#FEFEFE;font-family:var(--mono);font-size:.75rem}
+.ratio{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.rt{border:1px solid var(--line);padding:12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.rt .demo{padding:10px 12px;font-weight:800;font-size:1.25rem}
+.pass{color:var(--accent);font-family:var(--mono);font-size:.74rem}
+.specimen{border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0;overflow:hidden}
+.specimen .big{font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1}
+.script{font-family:var(--script);font-size:clamp(3rem,9vw,5.5rem);line-height:.9;font-weight:400}
+.gt{background:linear-gradient(90deg,#010000,#BD870D);-webkit-background-clip:text;background-clip:text;color:transparent;width:fit-content;max-width:100%}
+.tbl{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:520px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+tr:last-child td{border-bottom:0}
+.post{position:relative;aspect-ratio:1/1.05;width:100%;max-width:440px;background:#FEFEFE;color:#010000;border:1px solid var(--line);overflow:hidden;font-family:var(--display);container-type:inline-size;background-image:linear-gradient(160deg,#fff 30%,#ECECEC 100%)}
+.post>*{position:absolute}
+.post .l{left:5%;top:4%;font-weight:800;font-size:6cqw;letter-spacing:.04em;border:.4cqw solid #010000;border-radius:999px;padding:.6cqw 3cqw}
+.post .sale{right:4%;top:2%;text-align:right;line-height:.8}
+.post .sale i{font-family:var(--script);font-style:normal;font-size:12cqw;display:block}
+.post .sale b{font-size:9cqw;font-weight:800;background:linear-gradient(90deg,#010000,#BD870D);-webkit-background-clip:text;background-clip:text;color:transparent}
+.post .bn{left:0;right:0;top:25%;text-align:center;font-weight:800;font-size:8.5cqw;background:linear-gradient(90deg,#010000,#BD870D);-webkit-background-clip:text;background-clip:text;color:transparent}
+.post .ph{left:36%;top:35%;width:28%;height:44%;border-radius:4cqw;background:linear-gradient(150deg,#C98BFF,#3A2A5A);box-shadow:5cqw 3cqw 0 -1cqw #5B4B72}
+.post .nm{left:8%;top:47%;font-weight:800;font-size:7cqw;line-height:1}
+.post .nm small{display:block;font-size:3.5cqw;font-weight:700}
+.post .box{left:6%;top:60%;width:34%;border:.7cqw solid #010000;border-radius:5cqw;padding:2.5cqw 3cqw;font-size:3cqw;font-weight:700}
+.post .box b{display:block;font-size:6.5cqw;font-weight:800;line-height:1.1}
+.post .ft{left:5%;right:5%;bottom:3%;display:flex;justify-content:space-between;align-items:flex-end;font-size:3cqw;font-weight:700;gap:2cqw}
+.post .ft em{font-style:normal;font-size:4.3cqw;font-weight:800}
+.anat{display:flex;flex-direction:column;gap:14px;min-width:0}
+.anat ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.anat li{display:grid;grid-template-columns:34px 1fr;gap:10px}
+.anat li span{width:26px;height:26px;border-radius:50%;background:var(--ink);color:#FEFEFE;display:grid;place-items:center;font-family:var(--mono);font-size:.75rem}
+.anat li div b{display:block}
+.anat li div{color:var(--muted);font-size:.92rem}
+.anat li div b{color:var(--fg)}
+.dd{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.dd>div{border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:10px}
+.dd h3{font-size:1rem;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+.dd ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.pcs{display:flex;gap:10px;flex-wrap:wrap}
+.pc{display:flex;align-items:center;gap:8px;border:1px solid var(--line);padding:6px 12px 6px 6px;font-size:.85rem}
+.pc i{width:26px;height:26px;border-radius:50%;display:block}
+.note{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--muted);max-width:68ch}
+.toggle{background:transparent;color:#FEFEFE;border:1px solid #6B655C;font-family:var(--mono);font-size:.72rem;padding:6px 12px;cursor:pointer;border-radius:3px}
+@media (prefers-reduced-motion:no-preference){button.copy{transition:border-color .15s}}
+</style>
+
+<div class="mast">
+ <div class="mast-in">
+  <div class="row">
+   <div class="lockup"><b>TORI</b><span>STORES</span></div>
+   <span style="display:flex;gap:10px;flex-wrap:wrap"><a class="toggle" href="index.html#tori" style="text-decoration:none">Back to portfolio</a><button class="toggle" id="theme" type="button">Switch theme</button></span>
+  </div>
+  <h1>Brand Guide</h1>
+  <p class="sub">Black, gold and white on a soft grey ground. Built from the four Clearance Sale posts for iPhone 11, 13, 14 and 15, since no brand file was supplied. Hex values were sampled from the post artwork, and every rule below states what it was drawn from.</p>
+  <span class="tag">Prepared for Tori Stores · Version 1.0 · October 2026</span>
+ </div>
+</div>
+
+<div class="wrap">
+
+<section class="sec" id="essence">
+ <header><span class="tag">Brand essence</span><h2>Premium iPhones, plainly priced</h2></header>
+ <div class="grid g3">
+  <div class="specimen"><span class="tag">Position</span><p>A specialist store for new iPhones in Zambia. It signals trust with receipts, warranty and swaps, and signals premium with a black and gold finish.</p></div>
+  <div class="specimen"><span class="tag">Personality</span><p>Confident, clean, direct. The product and the price do the talking. Nothing decorative competes with the phone.</p></div>
+  <div class="specimen"><span class="tag">Promise</span><p>Brand new phones, a receipt, a warranty, and the option to swap and top up. All three appear on every post.</p></div>
+ </div>
+</section>
+
+<section class="sec" id="logo">
+ <header><span class="tag">Logo</span><h2>The Tori wordmark</h2></header>
+ <p class="lede">A heavy, wide, uppercase TORI with a phone glyph inside the O, and a spaced STORES line beneath. Two curved strokes wrap the left side like a lens arc. It is always black on a light ground.</p>
+ <div class="grid g3">
+  <div class="specimen" style="background:#FEFEFE;color:#010000;align-items:center;justify-content:center;min-height:160px"><div class="lockup" style="border-color:#010000"><b>TORI</b><span>STORES</span></div><span class="tag" style="color:#6B655C">Primary · black on white</span></div>
+  <div class="specimen" style="background:#0A0807;color:#FEFEFE;align-items:center;justify-content:center;min-height:160px"><div class="lockup"><b>TORI</b><span>STORES</span></div><span class="tag">Reversed · white on ink</span></div>
+  <div class="specimen" style="background:#F0F0F0;color:#010000;align-items:center;justify-content:center;min-height:160px"><div class="lockup" style="border-color:#010000"><b>TORI</b><span>STORES</span></div><span class="tag" style="color:#6B655C">On mist grey</span></div>
+ </div>
+ <div class="note">The lockup shown here is a typographic stand-in so the guide can display placement. Use the original logo file from the client for all production work.</div>
+ <div class="dd">
+  <div><h3>Placement</h3><ul><li>Top left on every post, about 20% of the post width.</li><li>Keep clear space equal to the height of the O on every side.</li><li>Never place it on the gold gradient or over the phone image.</li></ul></div>
+  <div><h3>Handle</h3><ul><li>Instagram and Facebook icons followed by TORI STORES, bottom right under the phone number.</li><li>Always uppercase, matching the wordmark.</li></ul></div>
+ </div>
+</section>
+
+<section class="sec" id="colour">
+ <header><span class="tag">Colour</span><h2>Four colours, one gradient</h2></header>
+ <p class="lede">The gold only ever appears inside a black to gold gradient on headline words. It never fills a button, a box or a background. That restraint is what keeps the posts looking expensive.</p>
+ <div class="grid g4" id="swatches"></div>
+ <div class="grid g2">
+  <div class="sw"><div class="grad"><span>#010000</span><span>#BD870D</span></div><div class="meta"><span class="name">Signature gradient</span><span class="role">Left to right, black into gold. Used on BRAND NEW and the word SALE!!. Black must lead the start of the word, gold finishes it.</span><div class="hexrow"><span>linear-gradient(90deg, #010000, #BD870D)</span><button class="copy" type="button" data-copy="linear-gradient(90deg, #010000, #BD870D)">Copy</button></div></div></div>
+  <div class="specimen"><span class="tag">Proportion across the posts</span>
+   <div style="display:flex;height:44px;border:1px solid var(--line)"><div style="flex:78;background:#FEFEFE"></div><div style="flex:12;background:#F0F0F0"></div><div style="flex:8;background:#010000"></div><div style="flex:2;background:#BD870D"></div></div>
+   <p style="color:var(--muted);font-size:.9rem">About 78% white, 12% mist, 8% black type and outlines, 2% gold. The phone photograph is the only other colour on the page.</p></div>
+ </div>
+ <h3 style="font-size:1.05rem">Contrast checks</h3>
+ <div class="ratio" id="ratios"></div>
+ <h3 style="font-size:1.05rem">Product colour</h3>
+ <p class="lede">Each post takes its colour from the phone photographed. The phone is the only place saturated colour is allowed, and the layout stays neutral around it.</p>
+ <div class="pcs">
+  <div class="pc"><i style="background:linear-gradient(135deg,#D9A0FF,#2B1F45)"></i>iPhone 14 Pro · Deep Purple</div>
+  <div class="pc"><i style="background:linear-gradient(135deg,#B7AFA4,#6E675E)"></i>iPhone 15 Pro · Natural Titanium</div>
+  <div class="pc"><i style="background:linear-gradient(135deg,#FF3B5C,#9E0A28)"></i>iPhone 11 · Red</div>
+  <div class="pc"><i style="background:linear-gradient(135deg,#FFC2E6,#F06AC8)"></i>iPhone 13 · Pink</div>
+ </div>
+</section>
+
+<section class="sec" id="type">
+ <header><span class="tag">Typography</span><h2>Heavy sans, one script, tight numbers</h2></header>
+ <p class="lede">The posts use two families. Font names below are the closest free matches on Google Fonts. Confirm the exact files with the client or whoever made the originals.</p>
+ <div class="grid g2">
+  <div class="specimen"><span class="tag">Headlines, product names, prices · Montserrat ExtraBold</span><span class="big gt">BRAND NEW</span><span class="big" style="font-size:clamp(1.6rem,4vw,2.4rem)">iPhone 14 <small style="font-size:.5em">PRO MAX</small></span><span class="big">K14,499</span></div>
+  <div class="specimen"><span class="tag">Sale accent · thin monoline script</span><span class="script">Clearance</span><p style="color:var(--muted);font-size:.9rem">Script is used once per post, for the campaign word only. Pair it with a bold sans word beneath, overlapping slightly.</p></div>
+ </div>
+ <div class="tbl"><table>
+  <tr><th>Role</th><th>Style</th><th>Size, relative to post width</th></tr>
+  <tr><td>Campaign word</td><td>Script, black, thin</td><td>About 12%</td></tr>
+  <tr><td>Campaign tag (SALE!!)</td><td>Bold sans, gradient</td><td>About 9%</td></tr>
+  <tr><td>Condition (BRAND NEW)</td><td>Bold sans, gradient, uppercase</td><td>About 7%</td></tr>
+  <tr><td>Model name</td><td>Bold sans, black, tight tracking</td><td>About 6%</td></tr>
+  <tr><td>Variant (PRO, PRO MAX)</td><td>Semi-bold sans, uppercase, below the model</td><td>About 2.5%</td></tr>
+  <tr><td>Storage label</td><td>Semi-bold sans, lowercase gb</td><td>About 2.5%</td></tr>
+  <tr><td>Price</td><td>ExtraBold sans, black, K prefix, comma separator</td><td>About 6%</td></tr>
+  <tr><td>Footer lines</td><td>Semi-bold sans</td><td>About 2.5%</td></tr>
+ </table></div>
+</section>
+
+<section class="sec" id="layout">
+ <header><span class="tag">Layout</span><h2>The post template</h2></header>
+ <p class="lede">All four posts share one square layout. Keep it fixed so the feed reads as a catalogue.</p>
+ <div class="grid g2" style="align-items:start">
+  <div class="post" role="img" aria-label="Schematic of the Tori Stores post layout">
+   <div class="l">TORI</div>
+   <div class="sale"><i>Clearance</i><b>SALE!!</b></div>
+   <div class="bn">BRAND NEW</div>
+   <div class="nm">iPhone 14<small>PRO</small></div>
+   <div class="box"><small>128gb</small><b>K12,499</b></div>
+   <div class="ph"></div>
+   <div class="ft"><span>Receipt &amp; Warranty offered</span><span>Swap &amp; Top up Allowed</span><span><em>+260972270930</em><br>TORI STORES</span></div>
+  </div>
+  <div class="anat"><ol>
+   <li><span>A</span><div><b>Header band</b>Logo left, campaign lockup right. Same two positions on every post.</div></li>
+   <li><span>B</span><div><b>Condition line</b>BRAND NEW, centred, gradient, directly above the phone.</div></li>
+   <li><span>C</span><div><b>Hero phone</b>Front and back view overlapped, centred. The screen and back show the model colour.</div></li>
+   <li><span>D</span><div><b>Model and price boxes</b>Model names flank the phone. Price boxes tuck behind the phone edge so the two overlap.</div></li>
+   <li><span>E</span><div><b>Trust strip</b>Receipt and warranty icon, swap and top-up icon, phone number with social handle. One baseline across the bottom.</div></li>
+   <li><span>F</span><div><b>Ground</b>White with soft grey silk-like swirls. Lightest at the top, slightly darker at the base.</div></li>
+  </ol></div>
+ </div>
+ <h3 style="font-size:1.05rem">Price box rule</h3>
+ <p>Boxes are white, with a thick black outline and heavy rounded corners. The Pro and Pro Max post uses a solid outline. The other three use a dashed outline. Pick one and use it everywhere. The dashed outline reads as a coupon and suits a clearance sale, so it is the recommended standard.</p>
+</section>
+
+<section class="sec" id="voice">
+ <header><span class="tag">Voice</span><h2>Short, factual, confident</h2></header>
+ <div class="grid g3">
+  <div class="specimen"><span class="tag">Always say</span><p>BRAND NEW<br>Receipt &amp; Warranty offered<br>Swap &amp; Top up Allowed<br>CLEARANCE SALE!!</p></div>
+  <div class="specimen"><span class="tag">Price format</span><p>K12,499 · capital K, no space, comma at thousands, no decimals. Storage as 128gb in lowercase.</p></div>
+  <div class="specimen"><span class="tag">Calls to action</span><p>The phone number is the only call to action. No tag lines, no emoji, and one exclamation pair on SALE!! only.</p></div>
+ </div>
+ <div class="dd">
+  <div><h3>Do</h3><ul><li>Lead every post with the condition: BRAND NEW.</li><li>Show the phone in its true colour on a clean ground.</li><li>Keep the footer strip identical across all posts.</li><li>Show a price for each storage size, smallest first.</li></ul></div>
+  <div><h3>Don't</h3><ul><li>Fill shapes or buttons with gold.</li><li>Add more than one script word to a post.</li><li>Put prices on a coloured or photographic ground.</li><li>Stretch, outline or recolour the logo.</li></ul></div>
+ </div>
+</section>
+
+<section class="sec" id="gaps">
+ <header><span class="tag">Inconsistencies found</span><h2>Fix these before building more templates</h2></header>
+ <div class="tbl"><table>
+  <tr><th>Item</th><th>What the posts show</th><th>Recommendation</th></tr>
+  <tr><td>Price box outline</td><td>Solid on the 14 Pro post, dashed on the other three.</td><td>Use dashed everywhere.</td></tr>
+  <tr><td>Logo size and offset</td><td>Slightly larger and further left on the iPhone 11 post.</td><td>Lock one size and position as a template layer.</td></tr>
+  <tr><td>Trust strip alignment</td><td>Icons and text shift a few pixels between posts.</td><td>Build the strip once and reuse it.</td></tr>
+  <tr><td>Capitalisation</td><td>PRO and PRO MAX appear in uppercase below a mixed case model name.</td><td>Keep as is. It is consistent and reads well.</td></tr>
+  <tr><td>Phone number</td><td>Identical on all four posts.</td><td>Keep. Add WhatsApp as a second contact if the client uses it.</td></tr>
+ </table></div>
+ <div class="note">Not visible in the posts: the exact logo file, brand font files, a secondary colour for non-sale posts, and tone of voice beyond the labels above. Ask the client for the logo in SVG or PNG with a transparent background.</div>
+</section>
+
+</div>
+
+<script>
+(function(){
+  var sw=[
+    {n:'Ink',h:'#010000',r:'Type, outlines, logo',tx:'#FEFEFE',s:'Sampled from headline text'},
+    {n:'Gold',h:'#BD870D',r:'Gradient end only',tx:'#010000',s:'Sampled from the end of BRAND NEW'},
+    {n:'White',h:'#FEFEFE',r:'Post ground, top',tx:'#010000',s:'Sampled from the post background',b:1},
+    {n:'Mist',h:'#F0F0F0',r:'Post ground, base',tx:'#010000',s:'Sampled from the lower background',b:1}
+  ];
+  var el=document.getElementById('swatches');
+  sw.forEach(function(c){
+    var d=document.createElement('div');d.className='sw';
+    d.innerHTML='<div class="chip" style="background:'+c.h+';color:'+c.tx+'">'+c.s+'</div><div class="meta"><span class="name">'+c.n+'</span><span class="role">'+c.r+'</span><div class="hexrow"><span>'+c.h+'</span><button class="copy" type="button" data-copy="'+c.h+'">Copy</button></div></div>';
+    el.appendChild(d);
+  });
+  function lum(h){var v=[1,3,5].map(function(i){var x=parseInt(h.substr(i,2),16)/255;return x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4)});return .2126*v[0]+.7152*v[1]+.0722*v[2]}
+  function cr(a,b){var x=lum(a),y=lum(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)}
+  var pairs=[['#010000','#FEFEFE','Ink on White'],['#010000','#F0F0F0','Ink on Mist'],['#BD870D','#FEFEFE','Gold on White'],['#FEFEFE','#010000','White on Ink'],['#BD870D','#010000','Gold on Ink']];
+  var rt=document.getElementById('ratios');
+  pairs.forEach(function(p){
+    var v=cr(p[0],p[1]),ok=v>=7?'Passes AAA':v>=4.5?'Passes AA':v>=3?'Large text only':'Fails';
+    var d=document.createElement('div');d.className='rt';
+    d.innerHTML='<div class="demo" style="background:'+p[1]+';color:'+p[0]+'">Aa K12,499</div><span style="font-weight:700">'+p[2]+'</span><span class="pass">'+v.toFixed(2)+' : 1 · '+ok+'</span>';
+    rt.appendChild(d);
+  });
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('button.copy');if(!b)return;
+    var t=b.getAttribute('data-copy');
+    function done(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o},1200)}
+    function fb(){var r=document.createRange();r.selectNodeContents(b.previousElementSibling);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';setTimeout(function(){b.textContent='Copy'},1200)}
+    try{navigator.clipboard.writeText(t).then(done,fb)}catch(x){fb()}
+  });
+  document.getElementById('theme').addEventListener('click',function(){
+    var r=document.documentElement,dark=r.getAttribute('data-theme')==='dark'||(r.getAttribute('data-theme')!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches);
+    r.setAttribute('data-theme',dark?'light':'dark');
+  });
+})();
+</script>
+
+</body></html>

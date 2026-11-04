@@ -40,20 +40,29 @@ ul,ol{padding:0;list-style:none}
 @media (max-width:760px){.nav ul li:not(.keep){display:none}}
 
 /* hero */
-.hero{padding:48px 0 72px}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
-.name{font-size:clamp(3.4rem,10.5vw,8.2rem);color:var(--blue);margin:14px 0 18px}
+.hero{padding:36px 0 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:end}
+.hero-text{padding-bottom:72px;align-self:center;position:relative;z-index:2}
+.name{font-size:clamp(3.4rem,11vw,9rem);color:var(--blue);margin:14px 0 18px}
 .role{font:700 clamp(1.15rem,2.6vw,1.6rem)/1.3 Inter,sans-serif;margin-bottom:14px}
-.pitch{font-size:1.1rem;max-width:34em;margin-bottom:22px}
+.pitch{font-size:1.1rem;max-width:32em;margin-bottom:22px}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
 .chips span{background:var(--ink);color:var(--cream);padding:9px 16px;border-radius:999px;font:700 13px/1 Inter,sans-serif}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;background:var(--blue);color:var(--cream);padding:15px 26px;border-radius:999px;font:700 14px/1 Inter,sans-serif;letter-spacing:.06em;text-decoration:none;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:var(--cream);padding:15px 26px;border-radius:999px;font:700 14px/1 Inter,sans-serif;letter-spacing:.06em;text-decoration:none;text-transform:uppercase;border:0;cursor:pointer}
 .btn:hover{filter:brightness(1.1)}
 .btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
-.hero-video video{width:100%;max-width:340px;margin:0 auto;border-radius:22px;background:var(--ink);box-shadow:0 18px 50px rgba(17,17,17,.22)}
-.hero-video figcaption{text-align:center;font-size:.9rem;color:var(--muted);margin-top:12px}
-@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:32px}}
+.btn svg{width:14px;height:14px}
+.portrait{position:relative;margin:0;width:100%;max-width:600px;justify-self:end;align-self:end;pointer-events:none}
+.portrait .disc{position:absolute;left:6%;top:8%;width:88%;aspect-ratio:1;border-radius:50%;background:var(--blue)}
+.portrait .ring{position:absolute;left:0;top:2%;width:100%;aspect-ratio:1;border-radius:50%;border:2px solid var(--ink);opacity:.35}
+.portrait img{position:relative;z-index:1;width:100%;height:auto;display:block;filter:contrast(1.04);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%)}
+.portrait .tag{position:absolute;z-index:2;left:2%;bottom:16%;background:var(--cream);color:var(--ink);padding:10px 16px;border-radius:999px;font:700 12px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 8px 24px rgba(17,17,17,.18)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:28px}.hero-text{padding-bottom:36px}.portrait{max-width:440px;justify-self:center}}
+dialog#introDlg{border:0;padding:0;background:transparent;max-width:min(92vw,400px);width:100%;overflow:visible}
+dialog#introDlg::backdrop{background:rgba(17,17,17,.72)}
+dialog#introDlg video{width:100%;max-height:86vh;border-radius:22px;background:var(--ink);display:block}
+dialog#introDlg .close{position:absolute;right:-6px;top:-46px;background:var(--cream);color:var(--ink);border:0;border-radius:999px;width:38px;height:38px;font:700 20px/1 Inter,sans-serif;cursor:pointer}
 
 /* bands */
 .band{background:var(--blue);color:var(--cream);padding:44px 0 36px}
@@ -152,6 +161,29 @@ tr:last-child td{border-bottom:0}
 .contact a.big{display:block;font:400 clamp(1.5rem,4vw,2.4rem)/1.3 Anton,sans-serif;text-transform:uppercase;text-decoration:none;margin:6px 0;color:#A9A7FF}
 .contact a.big:hover{color:var(--cream)}
 footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
+
+/* what I do */
+.do{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
+@media (max-width:980px){.do{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.do{grid-template-columns:1fr}}
+.do li{background:var(--cream);border-radius:20px;padding:20px 20px 22px}
+.do b{display:block;font:400 34px/1 Anton,sans-serif;color:var(--blue);opacity:.55}
+.do h3{font:700 16px/1.25 Inter,sans-serif;margin:10px 0 6px}
+.do p{font-size:.9rem;color:var(--muted);line-height:1.45}
+.do li.new{box-shadow:inset 0 0 0 2px var(--blue)}
+/* clients */
+.logos{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:8px}
+.logos li{background:var(--white);border-radius:22px;width:calc(25% - 12px);min-width:220px;height:170px;display:flex;align-items:center;justify-content:center;padding:22px;box-shadow:0 10px 28px rgba(17,17,17,.07)}
+.logos img{max-width:100%;max-height:116px;width:auto;height:auto;object-fit:contain}
+.logos li.wide img{max-height:70px}
+@media (max-width:560px){.logos li{width:calc(50% - 8px);min-width:0;height:120px;padding:16px}.logos img{max-height:72px}.logos li.wide img{max-height:48px}}
+/* brand guide + audit */
+.guide{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+@media (max-width:860px){.guide{grid-template-columns:1fr}}
+.guide figure img{width:100%;border-radius:16px;box-shadow:0 14px 40px rgba(17,17,17,.16);border:1px solid var(--line);background:#fff}
+.guide figcaption{font-size:.9rem;color:var(--muted);margin-top:10px}
+.audit{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:48px;align-items:start}
+@media (max-width:860px){.audit{grid-template-columns:1fr;gap:28px}.audit .vid{max-width:340px;margin:0 auto}}
 </style>
 </head>
 <body>
@@ -161,9 +193,11 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
   <div class="wrap">
     <a class="logo" href="#top">Mulenga Nkondwa</a>
     <ul>
-      <li><a class="l" href="#tori">Case Study</a></li>
+      <li><a class="l" href="#clients">Clients</a></li>
+      <li><a class="l" href="#tori">Tori Stores</a></li>
       <li><a class="l" href="#system">Content system</a></li>
       <li><a class="l" href="#ai">AI workflow</a></li>
+      <li><a class="l" href="#audits">Audits</a></li>
       <li><a class="l" href="#video">Video</a></li>
       <li class="keep"><a class="l" href="#contact">Contact</a></li>
     </ul>
@@ -172,22 +206,25 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
 
 <header class="hero" id="top">
   <div class="wrap hero-grid">
-    <div>
+    <div class="hero-text">
       <p class="eyebrow blue">Portfolio 26</p>
       <h1 class="display name">Mulenga<br>Nkondwa</h1>
       <p class="role">Digital Marketing &amp; Content</p>
-      <p class="pitch">I plan, make and report on daily content for Zambian businesses. I use Artificial Intelligence to do more work, in less time and less people.</p>
+      <p class="pitch">I plan, make and report on daily content for Zambian businesses. I use AI to move fast and my own review to keep it accurate.</p>
       <p class="chips"><span>Vantage Digital Solutions</span><span>Lusaka</span><span>English · Bemba · Nyanja</span></p>
-      <p class="cta"><a class="btn" href="#tori">See the work</a><a class="btn ghost" href="#contact">Contact</a></p>
+      <p class="cta"><a class="btn" href="#tori">See the work</a><button class="btn ghost" type="button" id="playIntro"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1l11 6-11 6z" fill="currentColor"/></svg>Watch the intro</button></p>
     </div>
-    <figure class="hero-video">
-      <video controls playsinline preload="metadata" poster="assets/img/poster-intro.jpg" aria-label="Introduction video by Mulenga Nkondwa">
-        <source src="assets/video/intro.mp4" type="video/mp4">
-      </video>
-      <figcaption>My introduction video</figcaption>
+    <figure class="portrait">
+      <span class="disc" aria-hidden="true"></span><span class="ring" aria-hidden="true"></span>
+      <picture><source srcset="assets/img/portrait.webp" type="image/webp"><img src="assets/img/portrait.png" width="1000" height="1056" alt="Portrait of Mulenga Nkondwa, wearing round tinted glasses and a black t-shirt"></picture>
+      <span class="tag">Lusaka · Zambia</span>
     </figure>
   </div>
 </header>
+<dialog id="introDlg" aria-label="Introduction video">
+  <button class="close" type="button" aria-label="Close video">&times;</button>
+  <video controls playsinline preload="none" poster="assets/img/poster-intro.jpg" aria-label="Introduction video by Mulenga Nkondwa, with captions"><source src="assets/video/intro.mp4" type="video/mp4"></video>
+</dialog>
 
 <section class="block alt" aria-labelledby="start">
   <div class="wrap">
@@ -215,6 +252,34 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
   </div>
 </section>
 
+<section class="block alt" style="padding-top:0" aria-labelledby="doH">
+  <div class="wrap">
+    <h2 id="doH" class="eyebrow blue">What I do</h2>
+    <ul class="do">
+      <li><b>01</b><h3>Social media</h3><p>Planning, posting and reporting.</p></li>
+      <li><b>02</b><h3>Google profiles</h3><p>Be found when people search.</p></li>
+      <li><b>03</b><h3>Digital content</h3><p>Graphics, carousels and Reels.</p></li>
+      <li class="new"><b>04</b><h3>Performance audits</h3><p>Where a business stands online, and a 30-day plan.</p></li>
+      <li><b>05</b><h3>AI-assisted workflows</h3><p>Fast drafts, every claim checked.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="clients" aria-labelledby="clientsH">
+  <div class="wrap">
+    <h2 id="clientsH" class="eyebrow blue" style="margin-bottom:22px">Companies I've worked with</h2>
+    <ul class="logos">
+      <li><img src="assets/img/clients/absa.png" alt="Absa" loading="lazy"></li>
+      <li><img src="assets/img/clients/studio88.png" alt="Studio 88: style on the move" loading="lazy"></li>
+      <li><img src="assets/img/clients/umoyo.png" alt="Umoyo Natural Health" loading="lazy"></li>
+      <li><img src="assets/img/clients/pedros.png" alt="Pedros Flame Grilled Chicken" loading="lazy"></li>
+      <li><img src="assets/img/clients/tecno.png" alt="Tecno" loading="lazy"></li>
+      <li class="wide"><img src="assets/img/clients/shoprite.png" alt="Shoprite" loading="lazy"></li>
+      <li class="wide"><img src="assets/img/clients/tradekings.png" alt="Trade Kings Zambia" loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
 <!-- ============ TORI STORES ============ -->
 <div class="band" id="tori"><div class="wrap"><span class="eyebrow">01 · Case study</span><h2 class="display">Tori Stores</h2></div></div>
 <section class="block">
@@ -235,6 +300,7 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
         <ul class="list">
           <li>Built a 13-week content calendar with five pillars (product, offers, education, trust, community), key dates such as Independence Day and Black Friday, and client approval on every post.</li>
           <li>Moved from irregular posting to Monday to Saturday, with more Reels and on-camera content.</li>
+          <li>Wrote a brand guide for the store (colour, type, layout and voice) so every post looks like the same shop. See below.</li>
           <li>Produced content with AI assistance (Claude), including explainer videos. I added my own research and reviewed everything for accuracy before client approval.</li>
         </ul>
         <h3 class="sub">Results</h3>
@@ -272,6 +338,14 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
       <img src="assets/img/tori-poll.jpg" alt="Tori Stores quick poll graphic: your biggest phone headache? Battery, storage, camera or price" loading="lazy">
       <p>A quick poll from Week 1 of the calendar, part of the community pillar. Its job is simple: get people to comment, which tells the algorithm the page is worth showing and tells the store what customers worry about.</p>
     </div>
+    <h3 class="sub" style="margin-top:56px">Brand guide</h3>
+    <p style="max-width:44em;margin-bottom:22px">A one-page guide for Tori Stores: black, gold and white on a soft grey ground, with the logo, colour, type, post layout and voice rules, built from the store's four Clearance Sale posts. It keeps the feed reading as one catalogue.</p>
+    <div class="guide">
+      <figure><img src="assets/img/guide-1.jpg" alt="Tori Stores Brand Guide: cover and brand essence" loading="lazy"><figcaption>Cover and brand essence.</figcaption></figure>
+      <figure><img src="assets/img/guide-2.jpg" alt="Tori Stores Brand Guide: colour palette and signature black-to-gold gradient" loading="lazy"><figcaption>Colour: four colours and one gradient.</figcaption></figure>
+      <figure><img src="assets/img/guide-3.jpg" alt="Tori Stores Brand Guide: the post template" loading="lazy"><figcaption>The post template.</figcaption></figure>
+    </div>
+    <p style="margin-top:22px"><a class="btn" href="tori-brand-guide.html" target="_blank" rel="noopener">Open the full brand guide</a></p>
     <p class="note">Source: Instagram and Facebook Insights, shared with the client's permission. The "before" window ends on 4 October, the day I started. Averages are rounded.</p>
   </div>
 </section>
@@ -389,11 +463,38 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
   </div>
 </section>
 
+<!-- ============ AUDITS ============ -->
+<div class="band" id="audits"><div class="wrap"><span class="eyebrow">04 · Audits</span><h2 class="display">Performance audits</h2></div></div>
+<section class="block alt">
+  <div class="wrap">
+    <p class="lead">I also audit how a business shows up online and turn the findings into a plan. This example covers two lodges in Lusaka, using their public Google, Facebook and TikTok pages as of 30 October 2026.</p>
+    <div class="audit">
+      <figure class="vid">
+        <video controls playsinline preload="none" poster="assets/img/poster-audit.jpg" aria-label="Animated key numbers from an online presence audit of two Lusaka lodges">
+          <source src="assets/video/audit.mp4" type="video/mp4">
+        </video>
+        <figcaption><b>The audit's key numbers, animated.</b> 32 seconds, vertical.</figcaption>
+      </figure>
+      <div>
+        <h3 class="sub" style="margin-top:0">What an audit covers</h3>
+        <ul class="list">
+          <li>Google profiles, Facebook, Instagram, TikTok, booking buttons and website, each rated as working, needs work or missing.</li>
+          <li>Six gaps, ranked, each with why it matters to a guest deciding where to stay.</li>
+          <li>The numbers behind the gaps: ratings, review counts and followers, side by side.</li>
+          <li>The climb: how many new 5-star reviews it takes to move a 3.4 rating to 3.8, 4.0 and 4.2.</li>
+          <li>A 30-day plan, week by week, ending in a one-page report.</li>
+        </ul>
+        <p class="note">Figures come from the lodges' public pages on 30 October 2026. The review estimates are arithmetic from 108 reviews at 3.4, and Google rounds ratings, so real numbers vary a little.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ VIDEO ============ -->
-<div class="band" id="video"><div class="wrap"><span class="eyebrow">04 · Video</span><h2 class="display">Short video</h2></div></div>
+<div class="band" id="video"><div class="wrap"><span class="eyebrow">05 · Video</span><h2 class="display">Short video</h2></div></div>
 <section class="block">
   <div class="wrap">
-    <p class="lead">Vertical explainers for Tori Stores, made with Claude, researched and reviewed by me, plus my own voice-over introduction at the top of this page.</p>
+    <p class="lead">Vertical explainers for Tori Stores, made with Claude, researched and reviewed by me, plus the short introduction at the top of this page.</p>
     <div class="vids">
       <figure class="vid">
         <video controls playsinline preload="none" poster="assets/img/poster-5-checks.jpg" aria-label="Explainer video: 5 checks before buying a second-hand iPhone">
@@ -407,18 +508,18 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
 </section>
 
 <!-- ============ ABOUT / CONTACT ============ -->
-<div class="band" id="about"><div class="wrap"><span class="eyebrow">05 · About</span><h2 class="display">About me</h2></div></div>
+<div class="band" id="about"><div class="wrap"><span class="eyebrow">06 · About</span><h2 class="display">About me</h2></div></div>
 <section class="block">
   <div class="wrap split">
     <dl class="meta">
       <dt>Based in</dt><dd>Lusaka, Zambia</dd>
       <dt>Studio</dt><dd>Vantage Digital Solutions</dd>
       <dt>Languages</dt><dd>English, Bemba, Nyanja</dd>
-      <dt>Education</dt><dd>Digital Marketing certificate, University of Zambia (2025)</dd>
+      <dt>Education</dt><dd>BSc Agricultural Science, University of Zambia · Digital Marketing certificate, University of Zambia (2025)</dd>
     </dl>
     <div>
-      <p class="lead" style="margin-bottom:16px">I'm a Lusaka-based digital marketer with a 2025 Digital Marketing certificate, from the University of Zambia.</p>
-      <p>My background is in sales and marketing, so I judge content by the enquiries and sales it produces, not only by views. I run Vantage Digital Solutions, a small studio that manages social media and content for businesses. I work in English, Bemba and Nyanja.</p>
+      <p class="lead" style="margin-bottom:16px">I'm a Lusaka-based digital marketer with a degree in Agricultural Science and a 2025 Digital Marketing certificate, both from the University of Zambia.</p>
+      <p>My background is in sales and marketing, so I judge content by the enquiries and sales it produces, not only by views. I run Vantage Digital Solutions, a small studio that manages social media and content for businesses, starting with Tori Stores. I work in English, Bemba and Nyanja.</p>
     </div>
   </div>
 </section>
@@ -431,5 +532,17 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
   </div>
 </section>
 <footer><div class="wrap">© 2026 Mulenga Nkondwa · Vantage Digital Solutions · Lusaka</div></footer>
+<script>
+(function(){
+  var dlg=document.getElementById('introDlg'),btn=document.getElementById('playIntro');
+  if(!dlg||!btn||!dlg.showModal){if(btn){btn.addEventListener('click',function(){window.open('assets/video/intro.mp4','_blank');});}return;}
+  var v=dlg.querySelector('video');
+  btn.addEventListener('click',function(){dlg.showModal();var p=v.play();if(p&&p.catch)p.catch(function(){});});
+  function shut(){v.pause();dlg.close();}
+  dlg.querySelector('.close').addEventListener('click',shut);
+  dlg.addEventListener('click',function(e){if(e.target===dlg)shut();});
+  dlg.addEventListener('close',function(){v.pause();});
+})();
+</script>
 </body>
 </html>
