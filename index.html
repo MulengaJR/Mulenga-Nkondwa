@@ -184,6 +184,66 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
 .guide figcaption{font-size:.9rem;color:var(--muted);margin-top:10px}
 .audit{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:48px;align-items:start}
 @media (max-width:860px){.audit{grid-template-columns:1fr;gap:28px}.audit .vid{max-width:340px;margin:0 auto}}
+
+/* analytics widget */
+.an{background:var(--white);border-radius:26px;padding:24px;box-shadow:0 14px 40px rgba(17,17,17,.1)}
+.an-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.an-tabs{display:inline-flex;background:var(--cream);border-radius:999px;padding:4px}
+.an-tabs button{border:0;background:transparent;font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:12px 20px;border-radius:999px;cursor:pointer;color:var(--ink)}
+.an-tabs button[aria-selected=true]{background:var(--ink);color:var(--cream)}
+.snd{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--ink);background:transparent;border-radius:999px;padding:9px 14px;font:700 12px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+.snd svg{width:18px;height:18px}
+.snd[aria-pressed=false] .w{display:none}
+.snd[aria-pressed=false]{opacity:.6}
+.an-flag{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:18px 0 6px;background:var(--blue);color:var(--cream);border-radius:14px;padding:12px 16px;font-size:.95rem}
+.an-flag b{font:400 20px/1 Anton,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.an-flag .pin{width:12px;height:12px;border-radius:50%;background:var(--cream);box-shadow:0 0 0 0 rgba(243,235,221,.7);animation:pulse 2s infinite}
+.an-flag.flash{animation:flash .5s}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(243,235,221,0)}100%{box-shadow:0 0 0 0 rgba(243,235,221,0)}}
+@keyframes flash{30%{transform:scale(1.02);filter:brightness(1.25)}}
+@media (prefers-reduced-motion:reduce){.an-flag .pin,.an-flag.flash{animation:none}}
+.an-hint{font-size:.92rem;color:var(--muted);margin:10px 0 12px;max-width:52em}
+.chartwrap{position:relative;width:100%;touch-action:pan-y;cursor:pointer}
+.chartwrap svg{display:block;width:100%;height:auto;overflow:visible}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--cream);font:500 12.5px/1.3 Inter,sans-serif;padding:7px 10px;border-radius:10px;white-space:nowrap;opacity:0;transform:translate(-50%,-100%);transition:opacity .12s;z-index:3}
+.tip b{display:block;font-weight:700}
+.sliderrow{margin-top:-2px}
+#split{-webkit-appearance:none;appearance:none;display:block;width:100%;height:48px;background:transparent;margin:0;cursor:grab;touch-action:pan-y}
+#split:active{cursor:grabbing}
+#split::-webkit-slider-runnable-track{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--ink) 0 var(--p,50%),var(--blue) var(--p,50%) 100%)}
+#split::-moz-range-track{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--ink) 0 var(--p,50%),var(--blue) var(--p,50%) 100%)}
+#split::-webkit-slider-thumb{-webkit-appearance:none;width:34px;height:34px;margin-top:-13px;border-radius:50%;border:0;background:var(--cream) radial-gradient(circle,var(--ink) 0 3px,transparent 3.5px);box-shadow:0 0 0 4px var(--ink),0 8px 18px rgba(17,17,17,.35);transition:transform .12s}
+#split::-moz-range-thumb{width:34px;height:34px;border-radius:50%;border:0;background:var(--cream) radial-gradient(circle,var(--ink) 0 3px,transparent 3.5px);box-shadow:0 0 0 4px var(--ink),0 8px 18px rgba(17,17,17,.35)}
+#split:active::-webkit-slider-thumb{transform:scale(1.12)}
+#split:focus-visible{outline:none}
+#split:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 4px var(--blue),0 0 0 8px rgba(74,71,245,.3)}
+#split:focus-visible::-moz-range-thumb{box-shadow:0 0 0 4px var(--blue),0 0 0 8px rgba(74,71,245,.3)}
+.an-ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin:6px 0 16px;font-size:.92rem}
+.an-ctrl select{font:700 14px Inter,sans-serif;padding:8px 12px;border-radius:10px;border:2px solid var(--ink);background:var(--white);color:var(--ink)}
+.btn.small{padding:10px 16px;font-size:12px}
+.an-state{font-weight:700;color:var(--blue)}
+.an-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:640px){.an-cards{grid-template-columns:1fr}}
+.an-card{border-radius:20px;padding:18px 20px;background:var(--cream);display:flex;flex-direction:column;gap:4px}
+.an-card .k{font:700 12px/1.2 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.an-card .v{font:400 clamp(2.4rem,6vw,3.3rem)/1 Anton,sans-serif}
+.an-card.a .v{color:var(--ink)}
+.an-card.b .v,.an-card.x .v{color:var(--blue)}
+.an-card .s{font-size:.88rem;color:var(--muted)}
+.fb{display:grid;gap:18px;margin-top:10px}
+.fb li{display:grid;grid-template-columns:1fr auto;gap:6px 16px}
+.fb .nm{font:700 13px/1.2 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.fb .chip{font:400 22px/1 Anton,sans-serif;color:var(--blue);text-align:right}
+.fb .bars{grid-column:1/-1;display:grid;gap:6px}
+.fb .bar{display:grid;grid-template-columns:96px 1fr 64px;gap:10px;align-items:center;font-size:.85rem}
+.fb .track{height:20px;border-radius:10px;background:rgba(17,17,17,.08);overflow:hidden}
+.fb .fill{height:100%;width:0;border-radius:10px;background:var(--ink);transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.fb .bar.l .fill{background:var(--blue)}
+.fb .bar b{font:400 22px/1 Anton,sans-serif;text-align:right}
+@media (max-width:480px){.fb .bar{grid-template-columns:78px 1fr 50px}}
+details.orig{margin-top:18px}
+details.orig summary{cursor:pointer;font:700 13px/1.2 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);padding:10px 0}
+details.orig .shots{margin-top:16px}
 </style>
 </head>
 <body>
@@ -304,11 +364,6 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
           <li>Produced content with AI assistance (Claude), including explainer videos. I added my own research and reviewed everything for accuracy before client approval.</li>
         </ul>
         <h3 class="sub">Results</h3>
-        <div class="compare" role="img" aria-label="Average Instagram views a day: 13 before, 122 after">
-          <div class="crow"><span>Before</span><div class="track"><div class="fill" style="--v:10.7"></div></div><span class="num">13</span></div>
-          <div class="crow after"><span>After</span><div class="track"><div class="fill" style="--v:100"></div></div><span class="num">122</span></div>
-        </div>
-        <p class="muted" style="font-size:.9rem">Average Instagram views a day. Before: 4 Sep to 4 Oct (30 days). After: 4 to 31 Oct (28 days).</p>
         <div class="tiles">
           <div class="tile"><div class="k">IG views</div><div class="v">399 <span class="to"><svg class="arr"><use href="#arr"/></svg></span> 3,416</div></div>
           <div class="tile"><div class="k">IG viewers</div><div class="v">166 <span class="to"><svg class="arr"><use href="#arr"/></svg></span> 1,446</div></div>
@@ -326,12 +381,44 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
       </div>
     </div>
 
-    <h3 class="sub" style="margin-top:56px">The evidence</h3>
-    <div class="shots">
-      <figure class="shot"><img src="assets/img/ig-before.jpg" alt="Instagram Insights for 4 September to 4 October: 399 views, 166 viewers, net followers -4" loading="lazy"><figcaption><b>Before.</b> Instagram Insights, 4 Sep to 4 Oct.</figcaption></figure>
-      <figure class="shot"><img src="assets/img/ig-after.jpg" alt="Instagram Insights for 4 to 31 October: 3,416 views, 1,446 viewers, net followers -5" loading="lazy"><figcaption><b>After.</b> Instagram Insights, 4 to 31 Oct.</figcaption></figure>
-      <figure class="shot"><img src="assets/img/fb-28days.jpg" alt="Facebook Insights for the last 28 days: 2.2K views, up 81.6 percent" loading="lazy"><figcaption><b>Facebook.</b> Last 28 days versus the 28 before.</figcaption></figure>
+    <h3 class="sub" style="margin-top:56px" id="explore">Explore the analytics</h3>
+    <div class="an" id="analytics">
+      <div class="an-top">
+        <div class="an-tabs" role="tablist" aria-label="Choose a platform">
+          <button type="button" role="tab" id="tabIG" aria-selected="true" aria-controls="panelIG">Instagram</button>
+          <button type="button" role="tab" id="tabFB" aria-selected="false" aria-controls="panelFB" tabindex="-1">Facebook</button>
+        </div>
+        <button type="button" class="snd" id="sndBtn" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="w" d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Sound on</span></button>
+      </div>
+      <p class="an-flag"><span class="pin" aria-hidden="true"></span><b>4 October 2026</b> I started working with Tori Stores</p>
+
+      <div id="panelIG" role="tabpanel" aria-labelledby="tabIG">
+        <p class="an-hint">Instagram views per day. Drag the slider, or tap the chart, to pick any date and compare the days before it with the days from it.</p>
+        <div class="chartwrap" id="cw">
+          <svg id="chart" role="img" aria-label="Bar chart of estimated Instagram views per day for Tori Stores from 4 September to 31 October 2026. Views are low before 4 October, when I started, and much higher after."></svg>
+          <div class="tip" id="tip" role="presentation"></div>
+        </div>
+        <div class="sliderrow"><input type="range" id="split" min="1" max="57" step="1" value="30" aria-label="Comparison date"></div>
+        <div class="an-ctrl">
+          <label>Compare <select id="win"><option value="0">all days</option><option value="14">14 days</option><option value="7">7 days</option></select> either side</label>
+          <button type="button" class="btn ghost small" id="jump">Jump to 4 Oct</button>
+          <span class="an-state" id="state" aria-live="polite"></span>
+        </div>
+        <div class="an-cards">
+          <div class="an-card a"><span class="k" id="aK">Before</span><span class="v" id="aV">0</span><span class="s" id="aS">views</span></div>
+          <div class="an-card b"><span class="k" id="bK">From</span><span class="v" id="bV">0</span><span class="s" id="bS">views</span></div>
+          <div class="an-card x"><span class="k">Views a day</span><span class="v" id="xV">0&times;</span><span class="s" id="xS"></span></div>
+        </div>
+        <p class="note" style="margin-top:18px">Totals for the 4 Oct split match Instagram Insights: 399 views from 4 Sep to 3 Oct and 3,416 from 4 to 31 Oct. Instagram does not export daily numbers, so each day is an estimate, traced from the Insights chart and scaled to those totals. Other dates are estimates too.</p>
+      </div>
+
+      <div id="panelFB" role="tabpanel" aria-labelledby="tabFB" hidden>
+        <p class="an-hint">Facebook Insights gives totals for two periods, not daily numbers, so this tab compares the last 28 days with the 28 days before. Earlier figures come from the percentage changes Insights reports.</p>
+        <ul class="fb" id="fbrows"></ul>
+        <p style="margin-top:14px"><button type="button" class="btn ghost small" id="fbReplay">Replay</button></p>
+      </div>
     </div>
+    
 
     <h3 class="sub" style="margin-top:56px">Sample creative</h3>
     <div class="poll">
@@ -346,7 +433,7 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
       <figure><img src="assets/img/guide-3.jpg" alt="Tori Stores Brand Guide: the post template" loading="lazy"><figcaption>The post template.</figcaption></figure>
     </div>
     <p style="margin-top:22px"><a class="btn" href="tori-brand-guide.html" target="_blank" rel="noopener">Open the full brand guide</a></p>
-    <p class="note">Source: Instagram and Facebook Insights, shared with the client's permission. The "before" window ends on 4 October, the day I started. Averages are rounded.</p>
+    <p class="note">Source: Instagram and Facebook Insights, shared with the client's permission. I started on 4 October 2026. Averages are rounded.</p>
   </div>
 </section>
 
@@ -532,6 +619,8 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
   </div>
 </section>
 <footer><div class="wrap">© 2026 Mulenga Nkondwa · Vantage Digital Solutions · Lusaka</div></footer>
+<script src="assets/ig-daily.js"></script>
+<script src="assets/analytics.js"></script>
 <script>
 (function(){
   var dlg=document.getElementById('introDlg'),btn=document.getElementById('playIntro');
