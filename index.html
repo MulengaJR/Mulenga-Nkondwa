@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mulenga Nkondwa | Digital Marketing &amp; Content</title>
-<meta name="description" content="Portfolio of Mulenga Nkondwa, a Lusaka-based digital marketer: social media, content and AI-assisted workflows. Featured case study: Tori Stores.">
+<title>Mulenga Nkondwa | Digital Marketing &amp; Design</title>
+<meta name="description" content="Portfolio of Mulenga Nkondwa, a Lusaka-based digital marketer and designer: social media, content, logos, print, app and web concepts. Featured case study: Tori Stores.">
 <meta name="theme-color" content="#F3EBDD">
-<meta property="og:title" content="Mulenga Nkondwa | Digital Marketing &amp; Content">
+<meta property="og:title" content="Mulenga Nkondwa | Digital Marketing &amp; Design">
 <meta property="og:description" content="Social media, content and AI-assisted workflows for Zambian businesses. Case study: Tori Stores.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234A47F5'/%3E%3Ctext x='32' y='46' font-size='40' font-family='Arial Black,sans-serif' fill='%23F3EBDD' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <style>
@@ -40,8 +40,8 @@ ul,ol{padding:0;list-style:none}
 @media (max-width:760px){.nav ul li:not(.keep){display:none}}
 
 /* hero */
-.hero{padding:36px 0 0;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:end}
+.hero{padding:36px 0 56px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center}
 .hero-text{padding-bottom:72px;align-self:center;position:relative;z-index:2}
 .name{font-size:clamp(3.4rem,11vw,9rem);color:var(--blue);margin:14px 0 18px}
 .role{font:700 clamp(1.15rem,2.6vw,1.6rem)/1.3 Inter,sans-serif;margin-bottom:14px}
@@ -53,12 +53,11 @@ ul,ol{padding:0;list-style:none}
 .btn:hover{filter:brightness(1.1)}
 .btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
 .btn svg{width:14px;height:14px}
-.portrait{position:relative;margin:0;width:100%;max-width:600px;justify-self:end;align-self:end;pointer-events:none}
-.portrait .disc{position:absolute;left:6%;top:8%;width:88%;aspect-ratio:1;border-radius:50%;background:var(--blue)}
-.portrait .ring{position:absolute;left:0;top:2%;width:100%;aspect-ratio:1;border-radius:50%;border:2px solid var(--ink);opacity:.35}
-.portrait img{position:relative;z-index:1;width:100%;height:auto;display:block;filter:contrast(1.04);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%)}
-.portrait .tag{position:absolute;z-index:2;left:2%;bottom:16%;background:var(--cream);color:var(--ink);padding:10px 16px;border-radius:999px;font:700 12px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 8px 24px rgba(17,17,17,.18)}
-@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:28px}.hero-text{padding-bottom:36px}.portrait{max-width:440px;justify-self:center}}
+.portrait{position:relative;margin:0;width:100%;max-width:500px;justify-self:end;align-self:center;aspect-ratio:1;pointer-events:none}
+.portrait .ring{position:absolute;inset:-14px;border-radius:50%;border:2px solid var(--ink);opacity:.3}
+.portrait img{position:relative;z-index:1;width:100%;height:100%;display:block;border-radius:50%;box-shadow:0 22px 54px rgba(17,17,17,.22)}
+.portrait .tag{position:absolute;z-index:2;left:-2%;bottom:9%;background:var(--cream);color:var(--ink);padding:10px 16px;border-radius:999px;font:700 12px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 8px 24px rgba(17,17,17,.18)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:28px}.hero-text{padding-bottom:36px}.portrait{max-width:360px;justify-self:center;margin-top:8px}}
 dialog#introDlg{border:0;padding:0;background:transparent;max-width:min(92vw,400px);width:100%;overflow:visible}
 dialog#introDlg::backdrop{background:rgba(17,17,17,.72)}
 dialog#introDlg video{width:100%;max-height:86vh;border-radius:22px;background:var(--ink);display:block}
@@ -163,7 +162,7 @@ tr:last-child td{border-bottom:0}
 footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
 
 /* what I do */
-.do{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
+.do{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
 @media (max-width:980px){.do{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:480px){.do{grid-template-columns:1fr}}
 .do li{background:var(--cream);border-radius:20px;padding:20px 20px 22px}
@@ -178,6 +177,9 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
 .logos li.wide img{max-height:70px}
 @media (max-width:560px){.logos li{width:calc(50% - 8px);min-width:0;height:120px;padding:16px}.logos img{max-height:72px}.logos li.wide img{max-height:48px}}
 
+.dt{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 0}
+@media (max-width:860px){.dt{grid-template-columns:repeat(2,1fr)}}
+.dt li{background:var(--white);border-radius:20px;height:96px;display:flex;align-items:center;justify-content:center;font:700 1.1rem Inter;box-shadow:0 10px 28px rgba(17,17,17,.08)}
 /* brand concept */
 .cw-fig img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 14px 40px rgba(17,17,17,.16);border:1px solid var(--line);background:#fff}
 .cw-fig figcaption{font-size:.9rem;color:var(--muted);margin-top:10px}
@@ -252,6 +254,67 @@ footer{padding:22px 0;font-size:.85rem;color:var(--muted)}
 details.orig{margin-top:18px}
 details.orig summary{cursor:pointer;font:700 13px/1.2 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);padding:10px 0}
 details.orig .shots{margin-top:16px}
+
+/* parts */
+.part{background:var(--ink);color:var(--cream);padding:56px 0 44px}
+.part .eyebrow{display:block;margin-bottom:10px;color:#A9A7FF}
+.part h2{font-size:clamp(2.8rem,8vw,6rem);margin-bottom:12px}
+.part p{max-width:44em;opacity:.9}
+.tagc{display:inline-block;border-radius:999px;padding:6px 14px;font:700 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.tagc.real{background:var(--ink);color:var(--cream)}
+.tagc.mine{background:var(--blue);color:var(--cream)}
+.tagc.concept{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+/* work index */
+.idx-bar{position:sticky;top:60px;z-index:10;background:var(--cream);padding:14px 0 12px;border-bottom:1px solid var(--line)}
+.idx-bar .wrap{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.idx-chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0;scrollbar-width:none}
+.idx-chips::-webkit-scrollbar{display:none}
+.idx-chips button{flex:0 0 auto;border:0;cursor:pointer;background:var(--white);color:var(--ink);font:700 13px/1 Inter,sans-serif;letter-spacing:.06em;padding:12px 18px;border-radius:999px;box-shadow:inset 0 0 0 2px rgba(17,17,17,.14)}
+.idx-chips button[aria-pressed=true]{background:var(--ink);color:var(--cream);box-shadow:none}
+.idx-chips button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+#idxCount{font-size:.85rem;color:var(--muted);margin-left:auto}
+.idx-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px}
+@media (max-width:980px){.idx-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.idx-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.ic{display:block;text-decoration:none;background:var(--white);border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(17,17,17,.08);transition:transform .15s}
+.ic:hover{transform:translateY(-3px)}
+.ic:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.ic .th{aspect-ratio:16/10;overflow:hidden;background:#e9e1d1}
+.ic .th img{width:100%;height:100%;object-fit:contain;object-position:center}
+.ic.cv .th img{object-fit:cover;object-position:top center}
+.ic .tx{padding:12px 14px 14px;display:grid;gap:3px}
+.ic .tx b{font:700 14px/1.25 Inter,sans-serif}
+.ic .tx span{font-size:.78rem;color:var(--muted)}
+.ic .tx i{font-style:normal;font:700 10px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:3px}
+.ic[hidden]{display:none}
+/* concept brands */
+.badge-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.cnote{background:var(--white);border-left:6px solid var(--blue);border-radius:14px;padding:14px 18px;font-size:.92rem;margin:0 0 26px;max-width:62em}
+.cb h3.sub{margin-top:44px}
+.cb .row3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cb .row2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:860px){.cb .row3,.cb .row2{grid-template-columns:1fr}}
+.cb figure img{width:100%;height:auto;border-radius:14px;box-shadow:0 14px 40px rgba(17,17,17,.14);border:1px solid var(--line);background:#fff}
+.cb figcaption{font-size:.88rem;color:var(--muted);margin-top:8px}
+.cb .row3.pages{grid-template-columns:repeat(3,1fr);max-width:880px}
+@media (max-width:860px){.cb .row3.pages{grid-template-columns:repeat(3,1fr);gap:10px}}
+.browser{border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(17,17,17,.16);border:1px solid var(--line);background:#fff}
+.browser .bar{display:flex;gap:6px;padding:10px 14px;background:#ece6d8}
+.browser .bar i{width:10px;height:10px;border-radius:50%;background:rgba(17,17,17,.25)}
+.browser img{width:100%;height:auto;display:block;border:0!important;border-radius:0!important;box-shadow:none!important}
+.cb .demo{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.cb .vidrow{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:36px;align-items:center}
+@media (max-width:860px){.cb .vidrow{grid-template-columns:1fr}.cb .vidrow .vid{max-width:300px;margin:0 auto}}
+/* tools */
+.toolgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+@media (max-width:980px){.toolgrid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.toolgrid{grid-template-columns:repeat(2,1fr)}}
+.toolgrid li{background:var(--white);border-radius:22px;padding:22px 12px 18px;text-align:center;box-shadow:0 10px 28px rgba(17,17,17,.08);display:grid;gap:12px;justify-items:center}
+.toolgrid .ico{height:72px;display:flex;align-items:center}
+.toolgrid img{height:72px;width:auto;max-width:90px;object-fit:contain;border-radius:16px}
+.toolgrid b{font:700 15px/1.2 Inter,sans-serif}
+.toolgrid span{font-size:.8rem;color:var(--muted);line-height:1.3}
+.nbp{margin:0 0 4px}
 </style>
 </head>
 <body>
@@ -261,13 +324,12 @@ details.orig .shots{margin-top:16px}
   <div class="wrap">
     <a class="logo" href="#top">Mulenga Nkondwa</a>
     <ul>
-      <li><a class="l" href="#clients">Clients</a></li>
-      <li><a class="l" href="#tori">Tori Stores</a></li>
-      <li><a class="l" href="#system">Content system</a></li>
-      <li><a class="l" href="#ai">AI workflow</a></li>
-      <li><a class="l" href="#audits">Audits</a></li>
-      <li><a class="l" href="#video">Video</a></li>
-      <li><a class="l" href="#brand">Brand</a></li>
+      <li class="keep"><a class="l" href="#work">Work</a></li>
+      <li><a class="l" href="#tori">Client work</a></li>
+      <li><a class="l" href="#lotus">Logos &amp; print</a></li>
+      <li><a class="l" href="#concepts">Concept brands</a></li>
+      <li><a class="l" href="#tools">Tools</a></li>
+      <li><a class="l" href="#about">About</a></li>
       <li class="keep"><a class="l" href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -278,14 +340,14 @@ details.orig .shots{margin-top:16px}
     <div class="hero-text">
       <p class="eyebrow blue">Portfolio 26</p>
       <h1 class="display name">Mulenga<br>Nkondwa</h1>
-      <p class="role">Digital Marketing &amp; Content</p>
-      <p class="pitch">I plan, make and report on daily content for Zambian businesses. I specialize in Branding, Graphic design, and Social Media Management.</p>
+      <p class="role">Digital Marketing, Content &amp; Design</p>
+      <p class="pitch">I plan, make and report on daily content for Zambian businesses, and I design the brand around it: logos, print, apps and websites. I use AI to move fast and my own review to keep it accurate.</p>
       <p class="chips"><span>Vantage Digital Solutions</span><span>Lusaka</span><span>English · Bemba · Nyanja</span></p>
-      <p class="cta"><a class="btn" href="#tori">See the work</a><button class="btn ghost" type="button" id="playIntro"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1l11 6-11 6z" fill="currentColor"/></svg>Watch the intro</button></p>
+      <p class="cta"><a class="btn" href="#work">See the work</a><button class="btn ghost" type="button" id="playIntro"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1l11 6-11 6z" fill="currentColor"/></svg>Watch the intro</button></p>
     </div>
     <figure class="portrait">
-      <span class="disc" aria-hidden="true"></span><span class="ring" aria-hidden="true"></span>
-      <picture><source srcset="assets/img/portrait.webp" type="image/webp"><img src="assets/img/portrait.png" width="1000" height="1056" alt="Portrait of Mulenga Nkondwa, wearing round tinted glasses and a black t-shirt"></picture>
+      <span class="ring" aria-hidden="true"></span>
+      <picture><source srcset="assets/img/portrait-circle.webp" type="image/webp"><img src="assets/img/portrait-circle.png" width="800" height="800" alt="Portrait of Mulenga Nkondwa, wearing round tinted glasses and a black t-shirt"></picture>
       <span class="tag">Lusaka · Zambia</span>
     </figure>
   </div>
@@ -330,6 +392,7 @@ details.orig .shots{margin-top:16px}
       <li><b>03</b><h3>Digital content</h3><p>Graphics, carousels and Reels.</p></li>
       <li class="new"><b>04</b><h3>Performance audits</h3><p>Where a business stands online, and a 30-day plan.</p></li>
       <li><b>05</b><h3>AI-assisted workflows</h3><p>Fast drafts, every claim checked.</p></li>
+      <li class="new"><b>06</b><h3>Brand &amp; UI design</h3><p>Logos, print, app and website concepts.</p></li>
     </ul>
   </div>
 </section>
@@ -348,6 +411,65 @@ details.orig .shots{margin-top:16px}
     </ul>
   </div>
 </section>
+
+<section class="block" id="work" aria-labelledby="workH" style="padding-bottom:20px">
+  <div class="wrap">
+    <h2 id="workH" class="eyebrow blue" style="margin-bottom:8px">All work, by type</h2>
+    <p class="lead" style="margin-bottom:6px">Pick a type to see every piece across every brand. Tap a card to jump to its full story.</p>
+    <p class="note" style="margin-top:0">Labels: <b>Client</b> is paid or real client work. <b>My design</b> and <b>My studio</b> are my own logos and brand. <b>Concept</b> is a fictional brand, made as a portfolio project with AI assistance.</p>
+  </div>
+</section>
+<div id="idxWrap">
+<div class="idx-bar" role="region" aria-label="Filter the work">
+  <div class="wrap">
+    <div class="idx-chips" id="idxChips">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="identity" aria-pressed="false">Identity</button>
+      <button type="button" data-f="print" aria-pressed="false">Print</button>
+      <button type="button" data-f="uiux" aria-pressed="false">UI/UX</button>
+      <button type="button" data-f="web" aria-pressed="false">Web</button>
+      <button type="button" data-f="motion" aria-pressed="false">Motion</button>
+      <button type="button" data-f="social" aria-pressed="false">Social</button>
+    </div>
+    <span id="idxCount" aria-live="polite"></span>
+  </div>
+</div>
+<section class="block" style="padding-top:8px">
+  <div class="wrap"><div class="idx-grid" id="idxGrid">
+<a class="ic" data-t="identity" href="#lotus"><span class="th"><img src="assets/img/lotus/study.webp" alt="Lotus: Streetwear logo" loading="lazy"></span><span class="tx"><i>My design</i><b>Lotus</b><span>Streetwear logo</span></span></a>
+<a class="ic" data-t="identity" href="#brand"><span class="th"><img src="assets/img/citywatch/logo-slate.webp" alt="City Watch Technology: Logo redesign" loading="lazy"></span><span class="tx"><i>Concept</i><b>City Watch Technology</b><span>Logo redesign</span></span></a>
+<a class="ic" data-t="identity" href="#kudu"><span class="th"><img src="assets/img/kudu/logo.webp" alt="Kudu Coffee: Logo & brand guide" loading="lazy"></span><span class="tx"><i>Concept</i><b>Kudu Coffee</b><span>Logo & brand guide</span></span></a>
+<a class="ic" data-t="identity" href="#mwezi"><span class="th"><img src="assets/img/mwezi/logo.webp" alt="mwezi: Logo & brand guide" loading="lazy"></span><span class="tx"><i>Concept</i><b>mwezi</b><span>Logo & brand guide</span></span></a>
+<a class="ic" data-t="identity" href="#nthaka"><span class="th"><img src="assets/img/nthaka/logo.webp" alt="nthaka: Logo & brand guide" loading="lazy"></span><span class="tx"><i>Concept</i><b>nthaka</b><span>Logo & brand guide</span></span></a>
+<a class="ic" data-t="identity" href="#tori"><span class="th"><img src="assets/img/guide-1.jpg" alt="Tori Stores: Brand guide" loading="lazy"></span><span class="tx"><i>Client</i><b>Tori Stores</b><span>Brand guide</span></span></a>
+<a class="ic" data-t="print" href="#print"><span class="th"><img src="assets/img/print/brochure-outside.webp" alt="Vantage Digital Solutions: Tri-fold brochure" loading="lazy"></span><span class="tx"><i>My studio</i><b>Vantage Digital Solutions</b><span>Tri-fold brochure</span></span></a>
+<a class="ic" data-t="print" href="#kudu"><span class="th"><img src="assets/img/kudu/brochure-out.webp" alt="Kudu Coffee: Brochure" loading="lazy"></span><span class="tx"><i>Concept</i><b>Kudu Coffee</b><span>Brochure</span></span></a>
+<a class="ic cv" data-t="print" href="#kudu"><span class="th"><img src="assets/img/kudu/cat-1.webp" alt="Kudu Coffee: Catalogue" loading="lazy"></span><span class="tx"><i>Concept</i><b>Kudu Coffee</b><span>Catalogue</span></span></a>
+<a class="ic" data-t="print" href="#mwezi"><span class="th"><img src="assets/img/mwezi/brochure-out.webp" alt="mwezi: Brochure" loading="lazy"></span><span class="tx"><i>Concept</i><b>mwezi</b><span>Brochure</span></span></a>
+<a class="ic cv" data-t="print" href="#mwezi"><span class="th"><img src="assets/img/mwezi/cat-1.webp" alt="mwezi: Catalogue" loading="lazy"></span><span class="tx"><i>Concept</i><b>mwezi</b><span>Catalogue</span></span></a>
+<a class="ic" data-t="print" href="#nthaka"><span class="th"><img src="assets/img/nthaka/brochure-out.webp" alt="nthaka: Brochure" loading="lazy"></span><span class="tx"><i>Concept</i><b>nthaka</b><span>Brochure</span></span></a>
+<a class="ic cv" data-t="print" href="#nthaka"><span class="th"><img src="assets/img/nthaka/cat-1.webp" alt="nthaka: Catalogue" loading="lazy"></span><span class="tx"><i>Concept</i><b>nthaka</b><span>Catalogue</span></span></a>
+<a class="ic cv" data-t="uiux" href="#kudu"><span class="th"><img src="assets/img/kudu/app.webp" alt="Kudu Coffee: Ordering app" loading="lazy"></span><span class="tx"><i>Concept</i><b>Kudu Coffee</b><span>Ordering app</span></span></a>
+<a class="ic cv" data-t="uiux" href="#mwezi"><span class="th"><img src="assets/img/mwezi/app.webp" alt="mwezi: Money app" loading="lazy"></span><span class="tx"><i>Concept</i><b>mwezi</b><span>Money app</span></span></a>
+<a class="ic cv" data-t="uiux" href="#nthaka"><span class="th"><img src="assets/img/nthaka/app.webp" alt="nthaka: Farm supplies app" loading="lazy"></span><span class="tx"><i>Concept</i><b>nthaka</b><span>Farm supplies app</span></span></a>
+<a class="ic" data-t="uiux" href="#kudu"><span class="th"><img src="assets/img/kudu/case-1.webp" alt="Kudu Coffee: UX case study" loading="lazy"></span><span class="tx"><i>Concept</i><b>Kudu Coffee</b><span>UX case study</span></span></a>
+<a class="ic" data-t="uiux" href="#mwezi"><span class="th"><img src="assets/img/mwezi/case-1.webp" alt="mwezi: UX case study" loading="lazy"></span><span class="tx"><i>Concept</i><b>mwezi</b><span>UX case study</span></span></a>
+<a class="ic" data-t="uiux" href="#nthaka"><span class="th"><img src="assets/img/nthaka/case-1.webp" alt="nthaka: UX case study" loading="lazy"></span><span class="tx"><i>Concept</i><b>nthaka</b><span>UX case study</span></span></a>
+<a class="ic cv" data-t="web" href="#kudu"><span class="th"><img src="assets/img/kudu/web.webp" alt="Kudu Coffee: Website" loading="lazy"></span><span class="tx"><i>Concept</i><b>Kudu Coffee</b><span>Website</span></span></a>
+<a class="ic cv" data-t="web" href="#mwezi"><span class="th"><img src="assets/img/mwezi/web.webp" alt="mwezi: Website" loading="lazy"></span><span class="tx"><i>Concept</i><b>mwezi</b><span>Website</span></span></a>
+<a class="ic cv" data-t="web" href="#nthaka"><span class="th"><img src="assets/img/nthaka/web.webp" alt="nthaka: Website" loading="lazy"></span><span class="tx"><i>Concept</i><b>nthaka</b><span>Website</span></span></a>
+<a class="ic cv" data-t="motion" href="#video"><span class="th"><img src="assets/img/poster-5-checks.jpg" alt="Tori Stores: Explainer video" loading="lazy"></span><span class="tx"><i>Client</i><b>Tori Stores</b><span>Explainer video</span></span></a>
+<a class="ic cv" data-t="motion" href="#audits"><span class="th"><img src="assets/img/poster-audit.jpg" alt="Online presence audit: Animated numbers" loading="lazy"></span><span class="tx"><i>My work</i><b>Online presence audit</b><span>Animated numbers</span></span></a>
+<a class="ic cv" data-t="motion" href="#top"><span class="th"><img src="assets/img/poster-intro.jpg" alt="Introduction: Typewriter-caption intro" loading="lazy"></span><span class="tx"><i>My work</i><b>Introduction</b><span>Typewriter-caption intro</span></span></a>
+<a class="ic cv" data-t="motion" href="#kudu"><span class="th"><img src="assets/img/kudu/poster.jpg" alt="Kudu Coffee: 15s intro with tune" loading="lazy"></span><span class="tx"><i>Concept</i><b>Kudu Coffee</b><span>15s intro with tune</span></span></a>
+<a class="ic cv" data-t="motion" href="#mwezi"><span class="th"><img src="assets/img/mwezi/poster.jpg" alt="mwezi: 15s intro with tune" loading="lazy"></span><span class="tx"><i>Concept</i><b>mwezi</b><span>15s intro with tune</span></span></a>
+<a class="ic cv" data-t="motion" href="#nthaka"><span class="th"><img src="assets/img/nthaka/poster.jpg" alt="nthaka: 15s intro with tune" loading="lazy"></span><span class="tx"><i>Concept</i><b>nthaka</b><span>15s intro with tune</span></span></a>
+<a class="ic cv" data-t="social" href="#tori"><span class="th"><img src="assets/img/tori-poll.jpg" alt="Tori Stores: Community poll post" loading="lazy"></span><span class="tx"><i>Client</i><b>Tori Stores</b><span>Community poll post</span></span></a>
+  </div></div>
+</section>
+</div>
+
+<div class="part" id="clientwork"><div class="wrap"><span class="eyebrow">Part one</span><h2 class="display">Client work</h2><p>Real clients, real numbers: the Tori Stores case study, the content system behind it, how I use AI and check it, an online audit, and short video.</p></div></div>
 
 <!-- ============ TORI STORES ============ -->
 <div class="band" id="tori"><div class="wrap"><span class="eyebrow">01 · Case study</span><h2 class="display">Tori Stores</h2></div></div>
@@ -511,7 +633,7 @@ details.orig .shots{margin-top:16px}
       <li><div><b>Repurpose</b>The Week 1 carousel idea became the "5 checks" video, and each video is made once for TikTok, Instagram Reels and Facebook Reels.</div></li>
     </ol>
 
-    <h3 class="sub">Tools I use</h3>
+    <h3 class="sub">AI tools I use</h3>
     <ul class="tools">
       <li><img src="assets/img/logos/chatgpt.png" alt="" aria-hidden="true">ChatGPT</li>
       <li><img src="assets/img/logos/claude.png" alt="" aria-hidden="true">Claude</li>
@@ -603,10 +725,33 @@ details.orig .shots{margin-top:16px}
   </div>
 </section>
 
+<div class="part" id="design"><div class="wrap"><span class="eyebrow">Part two</span><h2 class="display">Logos &amp; print</h2><p>A logo I designed, a logo concept with its working shown, and the brochure for my own studio.</p></div></div>
+
+<!-- ============ LOTUS ============ -->
+<div class="band" id="lotus"><div class="wrap"><span class="eyebrow">06 · Logo design</span><h2 class="display">Lotus</h2></div></div>
+<section class="block cb">
+  <div class="wrap">
+    <p class="badge-row"><span class="tagc mine">My design</span><span class="tagc concept">Mockups are illustrative</span></p>
+    <p class="lead" style="margin-bottom:12px">A streetwear logo I designed myself about a year ago, in Canva and Illustrator.</p>
+    <p style="max-width:70ch;margin-bottom:20px">It uses one flat colour and no gradients. A star sits over an "L" built from parallel offset strokes, with a heavy serif wordmark underneath, all on one centre axis. The original sketches are lost, so I rebuilt the study and construction sheets from the finished logo to show how it is proportioned.</p>
+    <figure><img src="assets/img/lotus/study.webp" alt="Lotus logo study: reading the mark, three versions and a size test from 240 down to 40 pixels" loading="lazy" width="1600" height="1067"><figcaption>Logo study: how the mark is built, three versions and a size test.</figcaption></figure>
+    <figure style="margin-top:18px"><img src="assets/img/lotus/construction.webp" alt="Lotus construction sheet measuring the star, monogram and wordmark with clear space and minimum size" loading="lazy" width="1600" height="1000"><figcaption>Construction, clear space and minimum size.</figcaption></figure>
+    <figure style="margin-top:18px"><img src="assets/img/lotus/colourways.webp" alt="The Lotus mark in twelve colour pairings" loading="lazy" width="1600" height="1000"><figcaption>The mark in twelve colour pairings.</figcaption></figure>
+    <h3 class="sub">In use: mockups</h3>
+    <div class="row2">
+      <figure><img src="assets/img/lotus/mockups-1.webp" alt="Mockup of the Lotus logo on a black and a blue t-shirt" loading="lazy" width="1600" height="1000"><figcaption>T-shirts.</figcaption></figure>
+      <figure><img src="assets/img/lotus/mockups-2.webp" alt="Mockup of the Lotus logo on a tote, hang tag, neck label and sticker" loading="lazy" width="1600" height="1000"><figcaption>Tote, hang tag, label and sticker.</figcaption></figure>
+      <figure><img src="assets/img/lotus/merch.webp" alt="Mockup of the Lotus logo on a hoodie, hang tag, tote and sticker" loading="lazy" width="1600" height="1067"><figcaption>Hoodie and accessories.</figcaption></figure>
+      <figure><img src="assets/img/lotus/tees.webp" alt="Six t-shirt colourways with the Lotus logo" loading="lazy" width="1600" height="1067"><figcaption>Six tee colourways.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <!-- ============ BRAND CONCEPT ============ -->
-<div class="band" id="brand"><div class="wrap"><span class="eyebrow">06 · Brand design</span><h2 class="display">Logo concept</h2></div></div>
+<div class="band" id="brand"><div class="wrap"><span class="eyebrow">07 · Concept logo</span><h2 class="display">Logo concept</h2></div></div>
 <section class="block">
   <div class="wrap">
+    <p class="badge-row nbp"><span class="tagc concept">Concept project</span></p>
     <p class="lead" style="margin-bottom:12px">City Watch Technology: a concept logo redesign for a CCTV and home security company.</p>
     <p style="max-width:70ch;margin-bottom:28px">The brief was trust, vigilance, urban and modern tech. I sketched four routes, rejected each for a clear reason, then combined the best two: a shield for protection, a camera lens that is always watching, and a city skyline for the place it protects. The amber dot is the "live / recording" signal. This is a concept project, shown to demonstrate my design process.</p>
     <figure class="cw-fig"><img src="assets/img/citywatch/sketches.webp" alt="Round 01 logo sketches for City Watch Technology: eye in a shield, camera and skyline, map pin with lens, CW monogram, then the combined shield, lens and skyline idea" loading="lazy" width="1600" height="1040"><figcaption>Round 1: four routes, then the combination.</figcaption></figure>
@@ -625,19 +770,192 @@ details.orig .shots{margin-top:16px}
   </div>
 </section>
 
+<!-- ============ PRINT / BROCHURE ============ -->
+<div class="band" id="print"><div class="wrap"><span class="eyebrow">08 · Print</span><h2 class="display">Brochure</h2></div></div>
+<section class="block">
+  <div class="wrap">
+    <p class="badge-row nbp"><span class="tagc mine">My studio</span></p>
+    <p class="lead" style="margin-bottom:12px">A tri-fold A4 brochure for my own studio, Vantage Digital Solutions.</p>
+    <p style="max-width:70ch;margin-bottom:28px">Outside: front cover, contact panel and process. Inside: who I am, what I do and the Tori Stores results. The copy and figures are mine, the palette matches this site, and the layout was generated with Claude and rendered at print size (A4 landscape, 150 dpi).</p>
+    <figure class="cw-fig"><img src="assets/img/print/brochure-outside.webp" alt="Outside of the Vantage Digital Solutions tri-fold brochure: how I work, get in touch, and the cover reading Get found. Get messages. Get sales." loading="lazy" width="1754" height="1240"><figcaption>Outside: process, contact and cover.</figcaption></figure>
+    <figure class="cw-fig" style="margin-top:20px"><img src="assets/img/print/brochure-inside.webp" alt="Inside of the brochure: who I am, what I do, and Tori Stores results of 4 leads and 2 sales" loading="lazy" width="1754" height="1240"><figcaption>Inside: about, services and recent work.</figcaption></figure>
+  </div>
+</section>
+
+<div class="part" id="concepts"><div class="wrap"><span class="eyebrow">Part three</span><h2 class="display">Concept brands</h2><p>Three fictional brands from three industries, each taken from logo to brochure, catalogue, website, app and video. They show range and how I keep one identity consistent across formats. They are not client work, and each is labelled as a concept and as AI-assisted.</p></div></div>
+<div class="band" id="kudu"><div class="wrap"><span class="eyebrow">09 · Concept brand</span><h2 class="display">Kudu Coffee</h2></div></div>
+<section class="block cb">
+  <div class="wrap">
+    <p class="badge-row"><span class="tagc concept">Concept project</span><span class="tagc mine">AI-assisted</span></p>
+    <p class="lead" style="margin-bottom:12px">A fictional specialty coffee brand in Lusaka: "Coffee with a wild streak."</p>
+    <p style="max-width:70ch;margin-bottom:18px">One logo carried through a brand guide, brochure, catalogue, website, ordering app and intro video, to show how a single identity holds together across formats.</p>
+    <p class="cnote"><b>Concept project, not a real company.</b> The kudu logo is my own drawing. I built the brochure, catalogue, website, app and video layouts with AI assistance (Claude) and directed and approved each step. Menu, prices and addresses are made up.</p>
+
+    <h3 class="sub" style="margin-top:8px">Logo and brand guide</h3>
+    <figure><img src="assets/img/kudu/logo.webp" alt="Kudu Coffee logo board: kudu head above the KUDU wordmark on espresso brown" loading="lazy" width="1600" height="1000"><figcaption>Logo, lockups and small-size versions.</figcaption></figure>
+    <div style="margin-top:18px"><figure><img src="assets/img/kudu/palette.webp" alt="Kudu Coffee brand guide page showing five logo versions" loading="lazy" width="1600" height="1000"><figcaption>Logo versions on brand colours.</figcaption></figure></div>
+
+    <h3 class="sub">Brochure and catalogue</h3>
+    <div class="row2">
+      <figure><img src="assets/img/kudu/brochure-out.webp" alt="Outside of the Kudu Coffee tri-fold brochure" loading="lazy" width="1600" height="1131"><figcaption>Brochure, outside. Cover, contact and menu.</figcaption></figure>
+      <figure><img src="assets/img/kudu/brochure-in.webp" alt="Inside of the Kudu Coffee tri-fold brochure" loading="lazy" width="1600" height="1131"><figcaption>Brochure, inside.</figcaption></figure>
+    </div>
+    <div class="row3 pages" style="margin-top:18px">
+      <figure><img src="assets/img/kudu/cat-1.webp" alt="Cover page of the Kudu Coffee product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Catalogue cover.</figcaption></figure>
+      <figure><img src="assets/img/kudu/cat-2.webp" alt="Inside page of the Kudu Coffee product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Inside page.</figcaption></figure>
+      <figure><img src="assets/img/kudu/cat-3.webp" alt="Inside page of the Kudu Coffee product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Inside page.</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:12px">Page 1 is the cover.</p>
+
+    <h3 class="sub">Website and app</h3>
+    <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/img/kudu/web.webp" alt="Kudu Coffee website home page: Coffee with a wild streak" loading="lazy" width="1440" height="900"></div>
+    <p class="note" style="margin-top:10px">Home page: responsive, with a phone layout.</p>
+    <div style="margin-top:18px"><figure><img src="assets/img/kudu/app.webp" alt="Kudu Coffee app screens: welcome, menu, drink detail, cart, order tracking and rewards" loading="lazy" width="1600" height="551"><figcaption>App screens.</figcaption></figure></div>
+    <p class="demo"><a class="btn" href="demos/kudu/index.html" target="_blank" rel="noopener">Open the website demo</a><a class="btn ghost" href="demos/kudu/app/app-prototype.html" target="_blank" rel="noopener">Open the app prototype</a></p>
+
+    <h3 class="sub">UX case study</h3>
+    <div class="row3">
+      <figure><img src="assets/img/kudu/case-1.webp" alt="Kudu Coffee UX case study overview: make the first coffee order take under a minute" loading="lazy" width="1600" height="1000"><figcaption>Overview.</figcaption></figure>
+      <figure><img src="assets/img/kudu/case-2.webp" alt="Kudu Coffee user flow" loading="lazy" width="1600" height="1000"><figcaption>Flow.</figcaption></figure>
+      <figure><img src="assets/img/kudu/case-3.webp" alt="Kudu Coffee design decisions" loading="lazy" width="1600" height="1000"><figcaption>Decisions.</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:12px">Desk research and a fictional persona. This was not tested with real users.</p>
+
+    <h3 class="sub">Intro video</h3>
+    <div class="vidrow">
+      <figure class="vid"><video controls playsinline preload="none" poster="assets/img/kudu/poster.jpg" aria-label="Kudu Coffee animated intro video"><source src="assets/video/kudu.mp4" type="video/mp4"></video></figure>
+      <div><p>A 15-second vertical intro in the brand colours, with an original tune made for it. Made as a Reel-style teaser for the concept.</p></div>
+    </div>
+  </div>
+</section>
+<div class="band" id="mwezi"><div class="wrap"><span class="eyebrow">10 · Concept brand</span><h2 class="display">mwezi</h2></div></div>
+<section class="block cb alt">
+  <div class="wrap">
+    <p class="badge-row"><span class="tagc concept">Concept project</span><span class="tagc mine">AI-assisted</span></p>
+    <p class="lead" style="margin-bottom:12px">A fictional mobile-money budgeting app for Zambia: "Money, month by month." ("mwezi" is Nyanja for moon and month.)</p>
+    <p style="max-width:70ch;margin-bottom:18px">A fintech identity built around a crescent that doubles as a monthly cycle, with a pay-day-first app, a website and a print set.</p>
+    <p class="cnote"><b>Concept project, not a real financial service.</b> Designed with AI assistance (Claude), under my direction and approved by me. Rates, fees, prices and the persona are made up, and nothing here handles real money.</p>
+
+    <h3 class="sub" style="margin-top:8px">Logo and brand guide</h3>
+    <figure><img src="assets/img/mwezi/logo.webp" alt="mwezi logo board: crescent mark and wordmark on midnight" loading="lazy" width="1600" height="1000"><figcaption>Logo, lockups and small-size versions.</figcaption></figure>
+    <div style="margin-top:18px"><figure><img src="assets/img/mwezi/palette.webp" alt="mwezi brand guide page with colour palette and type" loading="lazy" width="1600" height="1000"><figcaption>Colour and type.</figcaption></figure></div>
+
+    <h3 class="sub">Brochure and catalogue</h3>
+    <div class="row2">
+      <figure><img src="assets/img/mwezi/brochure-out.webp" alt="Outside of the mwezi tri-fold brochure" loading="lazy" width="1600" height="1131"><figcaption>Brochure, outside. Money, month by month.</figcaption></figure>
+      <figure><img src="assets/img/mwezi/brochure-in.webp" alt="Inside of the mwezi tri-fold brochure" loading="lazy" width="1600" height="1131"><figcaption>Brochure, inside.</figcaption></figure>
+    </div>
+    <div class="row3 pages" style="margin-top:18px">
+      <figure><img src="assets/img/mwezi/cat-1.webp" alt="Cover page of the mwezi product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Catalogue cover.</figcaption></figure>
+      <figure><img src="assets/img/mwezi/cat-2.webp" alt="Inside page of the mwezi product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Inside page.</figcaption></figure>
+      <figure><img src="assets/img/mwezi/cat-3.webp" alt="Inside page of the mwezi product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Inside page.</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:12px">Page 1 is the cover.</p>
+
+    <h3 class="sub">Website and app</h3>
+    <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/img/mwezi/web.webp" alt="mwezi website home page: Money, month by month" loading="lazy" width="1440" height="900"></div>
+    <p class="note" style="margin-top:10px">Home page: responsive, with a phone layout.</p>
+    <div style="margin-top:18px"><figure><img src="assets/img/mwezi/app.webp" alt="mwezi app screens: onboarding, wallet, circles, bills and card" loading="lazy" width="1600" height="1198"><figcaption>App screens.</figcaption></figure></div>
+    <p class="demo"><a class="btn" href="demos/mwezi/index.html" target="_blank" rel="noopener">Open the website demo</a><a class="btn ghost" href="demos/mwezi/app/app-prototype.html" target="_blank" rel="noopener">Open the app prototype</a></p>
+
+    <h3 class="sub">UX case study</h3>
+    <div class="row3">
+      <figure><img src="assets/img/mwezi/case-1.webp" alt="mwezi UX case study overview: monthly money in Zambia lives in five places at once" loading="lazy" width="1600" height="1000"><figcaption>Overview.</figcaption></figure>
+      <figure><img src="assets/img/mwezi/case-2.webp" alt="mwezi user flow" loading="lazy" width="1600" height="1000"><figcaption>Flow.</figcaption></figure>
+      <figure><img src="assets/img/mwezi/case-3.webp" alt="mwezi design decisions" loading="lazy" width="1600" height="1000"><figcaption>Decisions.</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:12px">Desk research and a fictional persona. This was not tested with real users.</p>
+
+    <h3 class="sub">Intro video</h3>
+    <div class="vidrow">
+      <figure class="vid"><video controls playsinline preload="none" poster="assets/img/mwezi/poster.jpg" aria-label="mwezi animated intro video"><source src="assets/video/mwezi.mp4" type="video/mp4"></video></figure>
+      <div><p>A 15-second vertical intro in the brand colours, with an original tune made for it. Made as a Reel-style teaser for the concept.</p></div>
+    </div>
+  </div>
+</section>
+<div class="band" id="nthaka"><div class="wrap"><span class="eyebrow">11 · Concept brand</span><h2 class="display">nthaka</h2></div></div>
+<section class="block cb">
+  <div class="wrap">
+    <p class="badge-row"><span class="tagc concept">Concept project</span><span class="tagc mine">AI-assisted</span></p>
+    <p class="lead" style="margin-bottom:12px">A fictional agritech and farm-supplies brand: "From the ground up." ("nthaka" is Nyanja for soil.)</p>
+    <p style="max-width:70ch;margin-bottom:18px">A seed-and-furrow mark for a brand that sells certified seed and fertiliser by phone, with a season planner, a shop, a brochure and a catalogue.</p>
+    <p class="cnote"><b>Concept project, not a real company.</b> Designed with AI assistance (Claude), under my direction and approved by me. Products, prices, depots and the farmer persona are made up, and the agronomy is illustrative, not advice.</p>
+
+    <h3 class="sub" style="margin-top:8px">Logo and brand guide</h3>
+    <figure><img src="assets/img/nthaka/logo.webp" alt="nthaka logo board: sprout-and-furrow mark and wordmark on deep green" loading="lazy" width="1600" height="1000"><figcaption>Logo, lockups and small-size versions.</figcaption></figure>
+    <div style="margin-top:18px"><figure><img src="assets/img/nthaka/palette.webp" alt="nthaka brand guide page with colour and type" loading="lazy" width="1600" height="1000"><figcaption>Colour and type.</figcaption></figure></div>
+
+    <h3 class="sub">Brochure and catalogue</h3>
+    <div class="row2">
+      <figure><img src="assets/img/nthaka/brochure-out.webp" alt="Outside of the nthaka tri-fold brochure" loading="lazy" width="1600" height="1131"><figcaption>Brochure, outside. From the ground up.</figcaption></figure>
+      <figure><img src="assets/img/nthaka/brochure-in.webp" alt="Inside of the nthaka tri-fold brochure" loading="lazy" width="1600" height="1131"><figcaption>Brochure, inside.</figcaption></figure>
+    </div>
+    <div class="row3 pages" style="margin-top:18px">
+      <figure><img src="assets/img/nthaka/cat-1.webp" alt="Cover page of the nthaka product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Catalogue cover.</figcaption></figure>
+      <figure><img src="assets/img/nthaka/cat-2.webp" alt="Inside page of the nthaka product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Inside page.</figcaption></figure>
+      <figure><img src="assets/img/nthaka/cat-3.webp" alt="Inside page of the nthaka product catalogue" loading="lazy" width="1240" height="1754"><figcaption>Inside page.</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:12px">Page 1 is the cover.</p>
+
+    <h3 class="sub">Website and app</h3>
+    <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/img/nthaka/web.webp" alt="nthaka website home page: Grow from the ground up" loading="lazy" width="1440" height="900"></div>
+    <p class="note" style="margin-top:10px">Home page: responsive, with a phone layout.</p>
+    <div style="margin-top:18px"><figure><img src="assets/img/nthaka/app.webp" alt="nthaka app screens: home, shop, season plan, market prices and checkout" loading="lazy" width="1600" height="1153"><figcaption>App screens.</figcaption></figure></div>
+    <p class="demo"><a class="btn" href="demos/nthaka/index.html" target="_blank" rel="noopener">Open the website demo</a><a class="btn ghost" href="demos/nthaka/app/app-prototype.html" target="_blank" rel="noopener">Open the app prototype</a></p>
+
+    <h3 class="sub">UX case study</h3>
+    <div class="row3">
+      <figure><img src="assets/img/nthaka/case-1.webp" alt="nthaka UX case study overview: farm inputs are bought by guessing" loading="lazy" width="1600" height="1000"><figcaption>Overview.</figcaption></figure>
+      <figure><img src="assets/img/nthaka/case-2.webp" alt="nthaka user flow" loading="lazy" width="1600" height="1000"><figcaption>Flow.</figcaption></figure>
+      <figure><img src="assets/img/nthaka/case-3.webp" alt="nthaka design decisions" loading="lazy" width="1600" height="1000"><figcaption>Decisions.</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:12px">Desk research and a fictional persona. This was not tested with real users.</p>
+
+    <h3 class="sub">Intro video</h3>
+    <div class="vidrow">
+      <figure class="vid"><video controls playsinline preload="none" poster="assets/img/nthaka/poster.jpg" aria-label="nthaka animated intro video"><source src="assets/video/nthaka.mp4" type="video/mp4"></video></figure>
+      <div><p>A 15-second vertical intro in the brand colours, with an original tune made for it. Made as a Reel-style teaser for the concept.</p></div>
+    </div>
+  </div>
+</section>
+<!-- ============ TOOLS ============ -->
+<div class="band" id="tools"><div class="wrap"><span class="eyebrow">12 · Tools</span><h2 class="display">Tools I use</h2></div></div>
+<section class="block">
+  <div class="wrap">
+    <h3 class="sub" style="margin-top:0">Design and video</h3>
+    <ul class="toolgrid">
+      <li><span class="ico"><img src="assets/img/tools/figma.png" alt="" aria-hidden="true" width="48" height="72"></span><b>Figma</b><span>UI/UX and app screens</span></li>
+      <li><span class="ico"><img src="assets/img/tools/canva.png" alt="" aria-hidden="true" width="72" height="72"></span><b>Canva</b><span>Social posts and layouts</span></li>
+      <li><span class="ico"><img src="assets/img/tools/photoshop.png" alt="" aria-hidden="true" width="72" height="72"></span><b>Photoshop</b><span>Photo and graphics</span></li>
+      <li><span class="ico"><img src="assets/img/tools/illustrator.png" alt="" aria-hidden="true" width="72" height="72"></span><b>Illustrator</b><span>Logos and vector</span></li>
+      <li><span class="ico"><img src="assets/img/tools/premiere.png" alt="" aria-hidden="true" width="72" height="72"></span><b>Premiere Pro</b><span>Video editing</span></li>
+      <li><span class="ico"><img src="assets/img/tools/capcut.png" alt="" aria-hidden="true" width="72" height="72"></span><b>CapCut</b><span>Reels and short video</span></li>
+    </ul>
+    <h3 class="sub">AI tools</h3>
+    <ul class="tools">
+      <li><img src="assets/img/logos/chatgpt.png" alt="" aria-hidden="true">ChatGPT</li>
+      <li><img src="assets/img/logos/claude.png" alt="" aria-hidden="true">Claude</li>
+      <li class="wide"><img src="assets/img/logos/gemini.png" alt="Gemini"></li>
+      <li><img src="assets/img/logos/glyph.png" alt="" aria-hidden="true">Grok</li>
+    </ul>
+    <p class="note">Logos belong to their owners. The concept brands above were built with Claude; where I drew the logo myself, it says so.</p>
+  </div>
+</section>
+
 <!-- ============ ABOUT / CONTACT ============ -->
-<div class="band" id="about"><div class="wrap"><span class="eyebrow">07 · About</span><h2 class="display">About me</h2></div></div>
+<div class="band" id="about"><div class="wrap"><span class="eyebrow">13 · About</span><h2 class="display">About me</h2></div></div>
 <section class="block">
   <div class="wrap split">
     <dl class="meta">
       <dt>Based in</dt><dd>Lusaka, Zambia</dd>
       <dt>Studio</dt><dd>Vantage Digital Solutions</dd>
+      <dt>Tools</dt><dd>Figma, Canva, Photoshop, Illustrator, Premiere Pro, CapCut, plus ChatGPT, Claude, Gemini and Grok</dd>
       <dt>Languages</dt><dd>English, Bemba, Nyanja</dd>
-      <dt>Education</dt><dd>Digital Marketing certificate, University of Zambia (2025)</dd>
+      <dt>Education</dt><dd>BSc Agricultural Science, University of Zambia · Digital Marketing certificate, University of Zambia (2025)</dd>
     </dl>
     <div>
-      <p class="lead" style="margin-bottom:16px">I'm a Lusaka-based digital marketer with a 2025 Digital Marketing certificate, from the University of Zambia.</p>
-      <p>My background is in sales and marketing, so I judge content by the enquiries and sales it produces, not only by views. I run Vantage Digital Solutions, a small studio that manages social media and content for businesses. I work in English, Bemba and Nyanja.</p>
+      <p class="lead" style="margin-bottom:16px">I'm a Lusaka-based digital marketer with a degree in Agricultural Science and a 2025 Digital Marketing certificate, both from the University of Zambia.</p>
+      <p>My background is in sales and marketing, so I judge content by the enquiries and sales it produces, not only by views. I run Vantage Digital Solutions, a small studio that manages social media and content for businesses, starting with Tori Stores. I work in English, Bemba and Nyanja.</p>
     </div>
   </div>
 </section>
@@ -662,6 +980,21 @@ details.orig .shots{margin-top:16px}
   dlg.querySelector('.close').addEventListener('click',shut);
   dlg.addEventListener('click',function(e){if(e.target===dlg)shut();});
   dlg.addEventListener('close',function(){v.pause();});
+})();
+</script>
+<script>
+(function(){
+  var chips=document.getElementById('idxChips'),grid=document.getElementById('idxGrid'),cnt=document.getElementById('idxCount');
+  if(!chips||!grid)return;
+  var names={all:'pieces',identity:'identity pieces',print:'print pieces',uiux:'UI/UX pieces',web:'web pieces',motion:'motion pieces',social:'social pieces'};
+  function apply(f){
+    var n=0;
+    Array.prototype.forEach.call(grid.children,function(c){var show=f==='all'||c.getAttribute('data-t')===f;c.hidden=!show;if(show)n++;});
+    Array.prototype.forEach.call(chips.querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',b.getAttribute('data-f')===f?'true':'false');});
+    cnt.textContent=n+' '+names[f];
+  }
+  chips.addEventListener('click',function(e){var b=e.target.closest('button');if(b)apply(b.getAttribute('data-f'));});
+  apply('all');
 })();
 </script>
 </body>
